@@ -1,0 +1,82 @@
+{
+	"ProductCollection": [
+		{
+			"Component Name": "CPU",
+			"Id": "1004713",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "NIC",
+			"Id": "1004714",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "CSSD",
+			"Id": "1004767",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "Chipset",
+			"Id": "1004756",
+			"Status": "No checking",
+			"Details": "details"
+		}
+	],
+	
+		"ProductCollection2": [
+		{
+			"Component Name": "CPU",
+			"Id": "2304713",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "NIC",
+			"Id": "2504714",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "CSSD",
+			"Id": "2604767",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "Chipset",
+			"Id": "2704756",
+			"Status": "No checking",
+			"Details": "details"
+		}
+	],
+	
+		"ProductCollection3": [
+		{
+			"Component Name": "CPU",
+			"Id": "3504713",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "NIC",
+			"Id": "3504714",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "CSSD",
+			"Id": "2784767",
+			"Status": "No checking",
+			"Details": "details"
+		},
+			{
+			"Component Name": "Chipset",
+			"Id": "2790756",
+			"Status": "No checking",
+			"Details": "details"
+		}
+	]
+}
