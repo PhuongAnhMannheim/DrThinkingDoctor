@@ -33,6 +33,7 @@
 					</items>
 				</Menu>
 			</menu>
+			
 		</MenuButton>
 						<ToolbarSpacer/>
 						<core:Icon src="sap-icon://activate"/>

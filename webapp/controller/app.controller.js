@@ -20,5 +20,6 @@ sap.ui.define([
 
 				sap.m.MessageToast.show("Action triggered on item: " + sItemPath);
 			}
+			
 	});
 });
