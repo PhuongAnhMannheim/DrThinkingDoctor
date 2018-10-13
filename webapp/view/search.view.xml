@@ -23,7 +23,7 @@
 			<MessagePage showHeader="false"
 				 text="searching for the patients"
 				 enableFormattedText="true"
-				 
+				  description="please be patient"
 				 icon="sap-icon://filter">
 		
 	</MessagePage>
