@@ -1,57 +1,26 @@
 <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="test1.controller.app">
+	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="test1.controller.app_p">
 	<App id="app">
 		
 			<Page title=" Welcome to Dr.thinking" class="text1">
 				<content>
 					<tnt:ToolHeader>
-						<MenuButton  icon="sap-icon://menu2" useDefaultActionOnly="true">
-			<menu>
-				<Menu   itemSelected="onMenuAction">
-					<items>
-						<MenuItem text="home" >
-							
-						</MenuItem>
-						<MenuItem text="view profile" >
-						
-						</MenuItem>
-						<MenuItem text="view appointment" >
-						
-						</MenuItem>
-						<MenuItem text="view chat history" >
-						
-						</MenuItem>
-						<MenuItem text="search for patients" >
-						
-						</MenuItem>
-						<MenuItem text="FAQ" >
-						
-						</MenuItem>
-						<MenuItem text="Terms and conditions" >
-						
-						</MenuItem>
-					</items>
-				</Menu>
-			</menu>
-		</MenuButton>
-						<ToolbarSpacer/>
-						<core:Icon src="sap-icon://activate"/>
-						<Text text="Feel free to view your profile" wrapping="false">
+						<Button icon="sap-icon://menu2" type="Transparent">
 							<layoutData>
-								<OverflowToolbarLayoutData priority="Disappear"/>
+								<OverflowToolbarLayoutData priority="NeverOverflow"/>
 							</layoutData>
-						</Text>
+						</Button>
 						<ToolbarSpacer/>
-						<Text text="Daniel Thinking" wrapping="false">
+					<core:Icon src="sap-icon://activate"/>
+					<ToolbarSpacer/>
+						<Text text="Omar" wrapping="false">
 							<layoutData>
 								<OverflowToolbarLayoutData priority="Disappear"/>
 							</layoutData>
 						</Text>
 					</tnt:ToolHeader>
 					
-					
-					
-					<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="shcbc">
+					<ObjectHeader responsive="true" intro="Omar" title="Omar" number="shcbc">
 						<attributes>
 			<ObjectAttribute
 				title="rating"
@@ -72,13 +41,13 @@
 					alignItems="Start"
 					justifyContent="Center">
 					<items>
-							<List binding="{/p_info/0}"  width="200px">
+							<List binding="{/doc_info/0}"  width="200px">
 										<DisplayListItem label="Name" value="{Name_1}"/>
 										<DisplayListItem label="Illness" value="{illness_1}"/>
 										<DisplayListItem label="Date" value="{date_1}"/>
 										<DisplayListItem label="Time" value="{Time_1}"/>
 									</List>
-									<List binding="{/p_info/0}"  width="200px">
+									<List binding="{/doc_info/0}"  width="200px">
 										<DisplayListItem label="Name" value="{Name_2}"/>
 										<DisplayListItem label="Illness" value="{illness_2}"/>
 										<DisplayListItem label="Date" value="{date_2}"/>
@@ -103,13 +72,13 @@
 					alignItems="Start"
 					justifyContent="Center">
 					<items>
-							<List binding="{/p_info/0}"  width="200px">
+							<List binding="{/doc_info/0}"  width="200px">
 										<DisplayListItem label="Name" value="{Name_3}"/>
 										<DisplayListItem label="Illness" value="{illness_3}"/>
 										<DisplayListItem label="Date" value="{date_3}"/>
 										<DisplayListItem label="Time" value="{Time_3}"/>
 									</List>
-									<List binding="{/p_info/0}"  width="200px">
+									<List binding="{/doc_info/0}"  width="200px">
 										<DisplayListItem label="Name" value="{Name_4}"/>
 										<DisplayListItem label="Illness" value="{illness_4}"/>
 										<DisplayListItem label="Date" value="{date_4}"/>

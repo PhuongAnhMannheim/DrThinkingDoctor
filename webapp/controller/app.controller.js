@@ -7,6 +7,18 @@ sap.ui.define([
 		onInit: function () {
 			var oModel4 = new sap.ui.model.json.JSONModel("p_info.json");
 			this.getView().setModel(oModel4);
-		}
+		},
+		onMenuAction: function(oEvent) {
+				var oItem = oEvent.getParameter("item"),
+					sItemPath = "";
+				while (oItem instanceof sap.m.MenuItem) {
+					sItemPath = oItem.getText() + " > " + sItemPath;
+					oItem = oItem.getParent();
+				}
+
+				sItemPath = sItemPath.substr(0, sItemPath.lastIndexOf(" > "));
+
+				sap.m.MessageToast.show("Action triggered on item: " + sItemPath);
+			}
 	});
 });
