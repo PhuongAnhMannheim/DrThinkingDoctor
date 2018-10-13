@@ -1,5 +1,5 @@
 <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="test1.controller.search">
+	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="test1.controller.search_p">
 	<App id="app">
 		<Page title=" Welcome to Dr.thinking" class="text1">
 			<content>
@@ -12,21 +12,34 @@
 					<ToolbarSpacer/>
 					<core:Icon src="sap-icon://activate"/>
 					<ToolbarSpacer/>
-					<Text text="Daniel Thinking" wrapping="false">
+					<Text text="Omar" wrapping="false">
 						<layoutData>
 							<OverflowToolbarLayoutData priority="Disappear"/>
 						</layoutData>
 					</Text>
 				</tnt:ToolHeader>
-				<SearchField width="90%" class="sapUiSmallMargin"/>
-			
-			<MessagePage showHeader="false"
-				 text="searching for the patients"
+				<Image src="/webapp/resources/dr_thinking_logo.png" height="300px" densityAware="false" width="300px"></Image>
+				
+				<MessagePage showHeader="false"
+				 text="hi omar"
 				 enableFormattedText="true"
-				  description="please be patient"
-				 icon="sap-icon://filter">
-		
+				 description="before search a doctor, pleast list your symptoms"
+				 icon="/webapp/resources/dr_thinking_logo.jpg"
+				 >
+					
+					<buttons>
+						
+					<Button text="edit your symptoms" width="200px"/>
+				
+			<Button text="submit symptoms" width="200px"/>
+			
+			</buttons>
 	</MessagePage>
+
+		
+		
+			
+			
 			</content>
 			<footer>
 				<Bar>
