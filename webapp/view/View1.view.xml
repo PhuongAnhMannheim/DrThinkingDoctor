@@ -1,7 +1,7 @@
 <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:core="sap.ui.core" xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="test1.controller.View1">
 	<App id="app">
 		<pages>
-		<Page title="blockchain cockpit" class="text1">
+		<Page title=" Welcome to Dr.thinking" class="text1">
 				<content>
 					
 					<tnt:ToolHeader>
@@ -49,5 +49,6 @@
 				</footer>
 			</Page>
 	</pages>
+	
 	</App>
 </mvc:View>

@@ -1,0 +1,54 @@
+<mvc:View xmlns:l="sap.ui.layout" xmlns:u="sap.ui.unified" class="viewPadding" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+	controllerName="test1.controller.Reg">
+	<Page title=" Welcome to Dr.thinking" class="text1">
+		<List headerText="Doctor Registeration">
+			<InputListItem label="Email">
+				<Input placeholder="Email" required="true" width="250px"/>
+			</InputListItem>
+			<InputListItem label="Password">
+				<Input placeholder="Password" required="true" width="250px"/>
+			</InputListItem>
+			<InputListItem label="Re-enter Password">
+				<Input placeholder="Password" required="true" width="250px"/>
+			</InputListItem>
+			<InputListItem label="Date of birth">
+				<Input placeholder="DD.MM.YYYY" required="true" width="250px"/>
+			</InputListItem>
+			<InputListItem label="Last Name">
+				<Input placeholder="Last Name" required="true" width="250px"/>
+			</InputListItem>
+			<InputListItem label="First Name">
+				<Input placeholder="First Name" required="true" width="250px"/>
+			</InputListItem>
+			<InputListItem label="Speciality">
+				<Select>
+					<core:Item key="GR" text="Ear" width="250px"/>
+					<core:Item key="MX" text="Leg" width="250px"/>
+					<core:Item key="NO" text="Eye" width="250px"/>
+					<core:Item key="NZ" text="heart" width="250px"/>
+					<core:Item key="NL" text="no specific" width="250px"/>
+				</Select>
+			</InputListItem>
+			<InputListItem label="Please attach your certifications">
+			
+			</InputListItem>
+		</List>
+		
+		<l:VerticalLayout>
+			<u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" tooltip="Upload your file to the local server"
+				uploadComplete="handleUploadComplete"/>
+			<Button text="register" press="handleUploadPress" type="Emphasized"/>
+		</l:VerticalLayout>
+		
+			<footer>
+				<Bar>
+				<contentLeft>
+				<Text text="hi user"/>
+				</contentLeft>
+				<contentRight>
+				<Text text="hi user"/>
+				</contentRight>
+				</Bar>
+				</footer>
+	</Page>
+</mvc:View>
