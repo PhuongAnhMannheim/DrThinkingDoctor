@@ -1,7 +1,7 @@
 <mvc:View xmlns:l="sap.ui.layout" xmlns:tnt="sap.tnt" xmlns:u="sap.ui.unified" class="viewPadding" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
-	controllerName="test1.controller.Reg">
+	controllerName="test1.controller.Reg_p">
 	<Page title=" Welcome to Dr.thinking" class="text1">
-		<tnt:ToolHeader>
+			<tnt:ToolHeader>
 						
 						<ToolbarSpacer/>
 						<core:Icon src="sap-icon://activate"/>
@@ -13,7 +13,8 @@
 						<ToolbarSpacer/>
 						
 					</tnt:ToolHeader>
-		<List headerText="Doctor Registeration">
+					
+		<List headerText="Patient Registeration">
 			<InputListItem label="Email">
 				<Input placeholder="Email" required="true" width="250px"/>
 			</InputListItem>
@@ -32,26 +33,19 @@
 			<InputListItem label="First Name">
 				<Input placeholder="First Name" required="true" width="250px"/>
 			</InputListItem>
-			<InputListItem label="Speciality">
-				<Select>
-					<core:Item key="GR" text="Ear" width="250px"/>
-					<core:Item key="MX" text="Leg" width="250px"/>
-					<core:Item key="NO" text="Eye" width="250px"/>
-					<core:Item key="NZ" text="heart" width="250px"/>
-					<core:Item key="NL" text="no specific" width="250px"/>
-				</Select>
+			<InputListItem label="Insurance No">
+				<Input placeholder="Insurance No" required="true" width="250px"/>
 			</InputListItem>
-			<InputListItem label="Please attach your certifications">
-			
+			<InputListItem label="IBAN">
+				<Input placeholder="IBAN" required="true" width="250px"/>
+			</InputListItem>
+			<InputListItem label="BIC">
+				<Input placeholder="BIC" required="true" width="250px"/>
 			</InputListItem>
 		</List>
-		
-		<l:VerticalLayout>
-			<u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" tooltip="Upload your file to the local server"
-				uploadComplete="handleUploadComplete"/>
-			<Button text="register" press="handleUploadPress" type="Emphasized"/>
-		</l:VerticalLayout>
-		
+        <Text text="We recommend that you maintain your personal health information in your profile page to improve diagnsis efficiency  " wrapping="false">
+		</Text>
+		<Button text="register" type="Emphasized"/>
 			<footer>
 				<Bar>
 				<contentLeft>
@@ -63,4 +57,4 @@
 				</Bar>
 				</footer>
 	</Page>
-</mvc:View>
+	</mvc:View>
