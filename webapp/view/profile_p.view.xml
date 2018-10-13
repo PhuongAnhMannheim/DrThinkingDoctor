@@ -1,5 +1,5 @@
 <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="test1.controller.profile">
+	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="test1.controller.profile_p">
 	<App id="app">
 		<pages>
 			<Page title=" Welcome to Dr.thinking" class="text1">
@@ -18,14 +18,14 @@
 							</layoutData>
 						</Text>
 						<ToolbarSpacer/>
-						<Text text="Daniel Thinking" wrapping="false">
+						<Text text="Omar" wrapping="false">
 							<layoutData>
 								<OverflowToolbarLayoutData priority="Disappear"/>
 							</layoutData>
 						</Text>
 					</tnt:ToolHeader>
 					
-					<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="shcbc">
+					<ObjectHeader responsive="true" intro="Omar" title="Omar" number="shcbc">
 						<attributes>
 			<ObjectAttribute
 				title="rating"
@@ -38,11 +38,11 @@
 						<l:content>
 							<FlexBox width="500px"  alignItems="Center">
 								<items>
-									<List binding="{/doc_info/0}" headerText="personal data" width="200px">
+									<List binding="{/p_info/0}" headerText="personal data" width="200px">
 										<DisplayListItem label="Name" value="{Name}"/>
 										<DisplayListItem label="Age" value="{age}"/>
 									</List>
-									<List binding="{/doc_info/0}" headerText="Medical experience data" width="200px">
+									<List binding="{/p_info/0}" headerText="allergies">
 										<DisplayListItem label="Name" value="{Name}"/>
 										<DisplayListItem label="Age" value="{age}"/>
 									</List>
@@ -54,11 +54,8 @@
 						<l:content>
 							<FlexBox width="95%" class="columns" alignItems="Stretch">
 								<items>
-									<List binding="{/doc_info/0}" headerText="Certificate and licenses">
-										<DisplayListItem label="Name" value="{Name}"/>
-										<DisplayListItem label="Age" value="{age}"/>
-									</List>
-									<List binding="{/doc_info/0}" headerText="biO">
+									
+									<List binding="{/p_info/0}" headerText="medical records">
 										<DisplayListItem label="Name" value="{Name}"/>
 										<DisplayListItem label="Age" value="{age}"/>
 									</List>
@@ -71,14 +68,11 @@
 						<l:content>
 							<FlexBox width="95%" class="columns" alignItems="Stretch">
 								<items>
-									<List binding="{/doc_info/0}" headerText="{Name}">
+									<List binding="{/doc_info/0}" headerText="Banking details">
 										<DisplayListItem label="Name" value="{Name}"/>
 										<DisplayListItem label="Age" value="{age}"/>
 									</List>
-									<List binding="{/doc_info/0}" headerText="{Name}">
-										<DisplayListItem label="Name" value="{Name}"/>
-										<DisplayListItem label="Age" value="{age}"/>
-									</List>
+									
 								</items>
 							</FlexBox>
 						</l:content>
