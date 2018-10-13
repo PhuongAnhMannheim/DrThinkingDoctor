@@ -5,8 +5,8 @@ sap.ui.define([
 	"use strict";
 	return Controller.extend("test.controller.profile_p", {
 		onInit: function () {
-			var oModel1 = new sap.ui.model.json.JSONModel("p_info.json");
-			this.getView().setModel(oModel1);
+			var oModel3 = new sap.ui.model.json.JSONModel("p_info.json");
+			this.getView().setModel(oModel3);
 		}
 	});
 });
