@@ -46,20 +46,7 @@
 			columnsM="1"
 			singleContainerFullSize="false"
 			ariaLabelledBy="Title1" >
-			<!--<f:toolbar>
-				<Toolbar id="TB1">
-					<Title id="Title1" text="Address" level="H4" titleStyle="H4"/>
-					<ToolbarSpacer />
-					<Button icon="sap-icon://settings"/>
-					<Button icon="sap-icon://drop-down-list" />
-				</Toolbar>
-			</f:toolbar>-->
 			<f:content>
-				<!--<Toolbar ariaLabelledBy="Title2">
-					<Title id="Title2" text="Office" level="H5" titleStyle="H5"/>
-					<ToolbarSpacer />
-					<Button icon="sap-icon://settings"/>
-				</Toolbar>-->
 				<Label text="First Name"></Label>
 				<Input value="{firstname}"></Input>
 				<Label text="Last Name"></Label>
@@ -83,22 +70,14 @@
 						<core:Item text="Dermatologists" key="Dermatologists"/>
 						<core:Item text="Colon" key="Colon"/>
 						<core:Item text="Endocrinologists" key="Endocrinologists"/>
-						<core:Item text="Gastroenterologists " key="Gastroenterologists "/>
+						<core:Item text="Gastroenterologists" key="Gastroenterologists"/>
+						<core:Item text="Otolaryngologsts" key="Otolaryngologists"/>
 						<core:Item text="others" key="others"/>
 					</items>
 				</Select>
 			</f:content>
 		</f:SimpleForm>
-			<!--<footer>
-				<Bar>
-				<contentLeft>
-				<Text text="hi user"/>
-				</contentLeft>
-				<contentRight>
-				<Text text="hi user"/>
-				</contentRight>
-				</Bar>
-				</footer>-->
+		<Button text="to home" press="onPressProfile"></Button>
 			</Page>
 		</pages>
 	</App>

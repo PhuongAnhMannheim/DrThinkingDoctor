@@ -4,7 +4,7 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("DrThinkingDoctor.controller.Register", {
-		onPressRegister: function(oEvent){
+		onPressProfile: function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("profile");
 		}
 	});
