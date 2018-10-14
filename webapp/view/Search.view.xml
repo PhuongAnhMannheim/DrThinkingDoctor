@@ -1,0 +1,43 @@
+<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
+	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="DrThinkingDoctor.controller.Search">
+	<App id="app">
+		<Page title=" Welcome to Dr.thinking" class="text1">
+			<content>
+				<tnt:ToolHeader>
+					<Button icon="sap-icon://menu2" type="Transparent">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="NeverOverflow"/>
+						</layoutData>
+					</Button>
+					<ToolbarSpacer/>
+					<core:Icon src="sap-icon://activate"/>
+					<ToolbarSpacer/>
+					<Text text="Daniel Thinking" wrapping="false">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="Disappear"/>
+						</layoutData>
+					</Text>
+				</tnt:ToolHeader>
+				<SearchField width="90%" class="sapUiSmallMargin"/>
+			
+			<MessagePage showHeader="false"
+				 text="searching for the patients"
+				 enableFormattedText="true"
+				  description="please be patient"
+				 icon="sap-icon://filter">
+		
+	</MessagePage>
+			</content>
+			<footer>
+				<Bar>
+					<contentLeft>
+						<Text text="hi user"/>
+					</contentLeft>
+					<contentRight>
+						<Text text="hi user"/>
+					</contentRight>
+				</Bar>
+			</footer>
+		</Page>
+	</App>
+</mvc:View>
