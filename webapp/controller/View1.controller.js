@@ -3,7 +3,7 @@ sap.ui.define([
 	"sap/ui/model/json/JSONModel"
 ], function (Controller, JSONModel) {
 	"use strict";
-	return Controller.extend("test1.controller.View1", {
+	return Controller.extend("DrThinkingDoctor.controller.View1", {
 		onInit: function () {},
 		onPress: function (oEvent) {
 			var oRouter = sap.ui.core.UIComponent.getRouterFor(this);

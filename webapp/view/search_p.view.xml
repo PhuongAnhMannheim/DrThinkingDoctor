@@ -1,5 +1,5 @@
 <mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="test1.controller.search_p">
+	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="DrThinkingDoctor.controller.search_p">
 	<App id="app">
 		<Page title=" Welcome to Dr.thinking" class="text1">
 			<content>
