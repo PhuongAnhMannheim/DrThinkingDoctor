@@ -6,7 +6,7 @@
 				<tnt:ToolHeader>
 					<Button icon="sap-icon://menu2" type="Transparent">
 						<layoutData>
-							<OverflowToolbarLayoutData priority="NeverOverflow"/>
+							<!--<OverflowToolbarLayoutData priority="NeverOverflow"/>-->
 						</layoutData>
 					</Button>
 					<ToolbarSpacer/>

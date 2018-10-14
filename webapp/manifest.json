@@ -87,6 +87,16 @@
 				"pattern": "profile",
 				"name": "profile",
 				"target": "profile"
+			},
+			{
+				"pattern": "home",
+				"name": "home",
+				"target": "home"
+			},
+			{
+				"pattern": "search",
+				"name": "search",
+				"target": "search"
 			}
 			],
 			"targets": {
@@ -98,9 +108,14 @@
 				},
 				"profile": {
 					"viewName": "Profile" 
+				},
+				"home": {
+					"viewName": "Home" 
+				},
+				"search": {
+					"viewName": "Search"
 				}
 			}
 		}
 	}
-} 
- 
+}
