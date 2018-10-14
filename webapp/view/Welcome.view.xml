@@ -3,14 +3,14 @@
 		<pages><Page title="{i18n>title}">
 				<content><VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
 						<items>
-						<Image backgroundPosition="center" src="img/dr_thinking_logo.png" width="50%">
+						<Image backgroundPosition="center" src="img/dr_thinking_logo.png" width="20%">
 						</Image>
 						<Label text="Welcome to Dr. Thinking" class="text2"/>
 						<Input placeholder="user name / e-mail" required="true"/>
 						<Input placeholder="passwort" required="true"/>
 						<Button width="12rem" text="login" type="Emphasized"/>
 						<Text text="or"/>
-						<Button width="12rem" text="register" press="action"/>
+						<Button width="12rem" text="register" press="onPressRegister"/>
 						</items>
 						
 					</VBox>	
