@@ -31,6 +31,11 @@
      // Load JSON in model
     oModel.loadData("feed.json");
     sap.ui.getCore().setModel(oModel);
+    
+    var oModel1 = new sap.ui.model.json.JSONModel();
+     // Load JSON in model
+    oModel.loadData("appointment.json");
+    sap.ui.getCore().setModel(oModel1);
 		</script>
 	</head>
 

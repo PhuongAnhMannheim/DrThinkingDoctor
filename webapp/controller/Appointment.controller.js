@@ -4,6 +4,14 @@ sap.ui.define([
 ], function(MessageToast, Controller) {
 	"use strict";
 	return Controller.extend("DrThinkingDoctor.controller.Appointment", {
-		
+		onInit: function () {
+ 
+    
+			var oModel = new sap.ui.model.json.JSONModel("appointment.json");
+			
+
+			this.getView().setModel(oModel);
+
+		}
 	});
 });

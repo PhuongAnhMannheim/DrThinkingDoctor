@@ -1,138 +1,104 @@
-<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="DrThinkingDoctor.controller.Appointment">
+<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	controllerName="DrThinkingDoctor.controller.Appointment">
 	<App id="app">
-		
-			<Page title=" Welcome to Dr.thinking" class="text1">
-				<content>
-					<tnt:ToolHeader>
-						<MenuButton  icon="sap-icon://menu2" useDefaultActionOnly="true">
-			<menu>
-				<Menu   itemSelected="onMenuAction">
-					<items>
-						<MenuItem text="home" >
-							
-						</MenuItem>
-						<MenuItem text="view profile" >
-						
-						</MenuItem>
-						<MenuItem text="view appointment" >
-						
-						</MenuItem>
-						<MenuItem text="view chat history" >
-						
-						</MenuItem>
-						<MenuItem text="search for patients" >
-						
-						</MenuItem>
-						<MenuItem text="FAQ" >
-						
-						</MenuItem>
-						<MenuItem text="Terms and conditions" >
-						
-						</MenuItem>
-					</items>
-				</Menu>
-			</menu>
-			
-		</MenuButton>
-						<ToolbarSpacer/>
-						<core:Icon src="sap-icon://activate"/>
-						<Text text="Feel free to view your profile" wrapping="false">
-							<layoutData>
-								<OverflowToolbarLayoutData priority="Disappear"/>
-							</layoutData>
-						</Text>
-						<ToolbarSpacer/>
-						<Text text="Daniel Thinking" wrapping="false">
-							<layoutData>
-								<OverflowToolbarLayoutData priority="Disappear"/>
-							</layoutData>
-						</Text>
-					</tnt:ToolHeader>
+		<Page title=" Welcome to Dr.thinking" class="text1">
+			<content>
+				<tnt:ToolHeader>
+					<MenuButton icon="sap-icon://menu2" useDefaultActionOnly="true">
+						<menu>
+							<Menu itemSelected="onMenuAction">
+								<items>
+									<MenuItem text="home"></MenuItem>
+									<MenuItem text="view profile"></MenuItem>
+									<MenuItem text="view appointment"></MenuItem>
+									<MenuItem text="view chat history"></MenuItem>
+									<MenuItem text="search for patients"></MenuItem>
+									<MenuItem text="FAQ"></MenuItem>
+									<MenuItem text="Terms and conditions"></MenuItem>
+								</items>
+							</Menu>
+						</menu>
+					</MenuButton>
+					<ToolbarSpacer/>
+					<core:Icon src="sap-icon://activate"/>
+					<Text text="Feel free to view your profile" wrapping="false">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="Disappear"/>
+						</layoutData>
+					</Text>
+					<ToolbarSpacer/>
+					<Text text="Daniel Thinking" wrapping="false">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="Disappear"/>
+						</layoutData>
+					</Text>
+				</tnt:ToolHeader>
+				<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="information">
+					<attributes>
+						<ObjectAttribute title="rating" text="dhkbv"/>
+					</attributes>
+				</ObjectHeader>
+				<Panel>
+					<headerToolbar>
+						<Toolbar>
+							<Title level="H2" text="Upcoming appointment"/>
+						</Toolbar>
+					</headerToolbar>
 					
-					
-					
-					<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="shcbc">
-						<attributes>
-			<ObjectAttribute
-				title="rating"
-				text="dhkbv"/>
-		</attributes>
-					</ObjectHeader>
-					
-					<Panel>
-				<headerToolbar>
-					<Toolbar>
-						<Title level="H2" text="Upcoming appointment" />
-					</Toolbar>
-				</headerToolbar>
+						<FlexBox height="100px" justifyContent="Center" class="Center">
+							<items>
+								<List binding="{/p_info/0}" width="300px">
+									<DisplayListItem label="Name" value="{Name_1}"/>
+									<DisplayListItem label="Illness" value="{illness_1}"/>
+									<DisplayListItem label="Date" value="{date_1}"/>
+									<DisplayListItem label="Time" value="{Time_1}"/>
+								</List>
+								<List binding="{/p_info1/0}" width="300px">
+									<DisplayListItem label="Name" value="{Name_2}"/>
+									<DisplayListItem label="Illness" value="{illness_2}"/>
+									<DisplayListItem label="Date" value="{date_2}"/>
+									<DisplayListItem label="Time" value="{Time_2}"/>
+								</List>
+							</items>
+						</FlexBox>
 				
-				<l:HorizontalLayout class="sapUiContentPadding" >
-				<FlexBox
-					height="100px"
-					alignItems="Start"
-					justifyContent="Center">
-					<items>
-							<List binding="{/p_info/0}"  width="200px">
-										<DisplayListItem label="Name" value="{Name_1}"/>
-										<DisplayListItem label="Illness" value="{illness_1}"/>
-										<DisplayListItem label="Date" value="{date_1}"/>
-										<DisplayListItem label="Time" value="{Time_1}"/>
-									</List>
-									<List binding="{/p_info/0}"  width="200px">
-										<DisplayListItem label="Name" value="{Name_2}"/>
-										<DisplayListItem label="Illness" value="{illness_2}"/>
-										<DisplayListItem label="Date" value="{date_2}"/>
-										<DisplayListItem label="Time" value="{Time_2}"/>
-									</List>
-					</items>
-				</FlexBox>
-				</l:HorizontalLayout>
 				</Panel>
+				<Panel>
+					<headerToolbar>
+						<Toolbar>
+							<Title level="H2" class="center" text="Previous appointment"/>
+						</Toolbar> 
+					</headerToolbar>
+					
+						<FlexBox height="100px" justifyContent="Center">
+							<items>
+								<List binding="{/p_info2/0}" width="300px">
+									<DisplayListItem label="Name" value="{Name_3}"/>
+									<DisplayListItem label="Illness" value="{illness_3}"/>
+									<DisplayListItem label="Date" value="{date_3}"/>
+									<DisplayListItem label="Time" value="{Time_3}"/>
+								</List>
+								<List binding="{/p_info3/0}" width="300px">
+									<DisplayListItem label="Name" value="{Name_4}"/>
+									<DisplayListItem label="Illness" value="{illness_4}"/>
+									<DisplayListItem label="Date" value="{date_4}"/>
+									<DisplayListItem label="Time" value="{Time_4}"/>
+								</List>
+							</items>
+						</FlexBox>
 				
-			
-					<Panel>
-				<headerToolbar>
-					<Toolbar>
-						<Title level="H2" text="Previous appointment" />
-					</Toolbar>
-				</headerToolbar>
-				
-				<l:HorizontalLayout class="sapUiContentPadding" >
-				<FlexBox
-					height="100px"
-					alignItems="Start"
-					justifyContent="Center">
-					<items>
-							<List binding="{/p_info/0}"  width="200px">
-										<DisplayListItem label="Name" value="{Name_3}"/>
-										<DisplayListItem label="Illness" value="{illness_3}"/>
-										<DisplayListItem label="Date" value="{date_3}"/>
-										<DisplayListItem label="Time" value="{Time_3}"/>
-									</List>
-									<List binding="{/p_info/0}"  width="200px">
-										<DisplayListItem label="Name" value="{Name_4}"/>
-										<DisplayListItem label="Illness" value="{illness_4}"/>
-										<DisplayListItem label="Date" value="{date_4}"/>
-										<DisplayListItem label="Time" value="{Time_4}"/>
-									</List>
-					</items>
-				</FlexBox>
-				</l:HorizontalLayout>
 				</Panel>
-				
-				</content>
-				<footer>
-					<Bar>
-						<contentLeft>
-							<Text text="hi user"/>
-						</contentLeft>
-						<contentRight>
-							<Text text="hi user"/>
-						</contentRight>
-					</Bar>
-				</footer>
-			</Page>
-	
+			</content>
+			<footer>
+				<Bar>
+					<contentLeft>
+						<Text text="hi user"/>
+					</contentLeft>
+					<contentRight>
+						<Text text="hi user"/>
+					</contentRight>
+				</Bar>
+			</footer>
+		</Page>
 	</App>
 </mvc:View>
