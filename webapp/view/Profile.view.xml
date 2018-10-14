@@ -1,104 +1,77 @@
-<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc"
-	xmlns="sap.m" xmlns:tnt="sap.tnt" controllerName="DrThinkingDoctor.controller.Profile">
+<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+	controllerName="DrThinkingDoctor.controller.Profile">
 	<App id="app">
-			<Page title=" Welcome to Dr.thinking">
-				<content>
-					<tnt:ToolHeader>
-						<Button 
-							id="sideNavigationToggleButton"
-							icon="sap-icon://menu2"
-							type="Transparent"
-							press="onSideNavButtonPress">
-							<!--<layoutData>
+		<Page title=" Welcome to Dr.thinking">
+			<content>
+				<tnt:ToolHeader>
+					<Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent" press="onSideNavButtonPress">
+						<!--<layoutData>
 								<OverflowToolbarLayoutData priority="NeverOverflow" />
 							</layoutData>-->
-						</Button>
-						<ToolbarSpacer/>
-						<core:Icon src="sap-icon://activate"/>
-						<Text text="Feel free to view your profile" wrapping="false">
-							
-							<layoutData>
-								<OverflowToolbarLayoutData priority="Disappear"/>
-							</layoutData>
-						</Text>
-						<ToolbarSpacer/>
-						<Text text="Daniel Thinking" wrapping="false">
-							<layoutData>
-								<OverflowToolbarLayoutData priority="Disappear"/>
-							</layoutData>
-						</Text>
-					</tnt:ToolHeader>
-					
-					<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="shcbc">
-						<attributes>
-			<ObjectAttribute
-				title="rating"
-				text="dhkbv"/>
-		</attributes>
-					</ObjectHeader>
-					
-					
-					<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%" >
-						<l:content>
-						
-									<List binding="{/doc_info/0}" headerText="personal data" class="list" >
-										<DisplayListItem label="Name" value="{Name}"/>
-										<DisplayListItem label="Age" value="{Age}"/>
-										<DisplayListItem label="Date of Birth" value="{Date}"/>
-										<DisplayListItem label="Nationality" value="{Nationality}"/>
-										<DisplayListItem label="Email" value="{Email}"/>
-										<DisplayListItem label="Address" value="{Address}"/>
-										<DisplayListItem label="Country" value="{Country}"/>
-										<DisplayListItem label="Phone No" value="{Phone}"/>
-										<DisplayListItem label="Specialty" value="{Specialty}"/>
-										
-									</List>
-									
-							
-							<List binding="{/doc_info/0}" headerText="Medical experience data" >
-										<DisplayListItem label="{medical1}"/>
-										<DisplayListItem label="{medical2}"/>
-									</List>
-									<List binding="{/doc_info/0}" headerText="Certificate and licenses" >
-										<DisplayListItem label="{Certificate1}"/>
-										<DisplayListItem label="{Certificate2}"/>
-									    <DisplayListItem label="{Certificate3}"/>
-									</List>
-									
-							
-							<List binding="{/doc_info/0}" headerText="Bio" >
-										<DisplayListItem label="{Bio}"/>
-										
-									</List>
-									
-									<List binding="{/doc_info/0}" headerText="Bank details" >
-										<DisplayListItem label="IBAN" value="{IBAN}"/>
-										<DisplayListItem label="BIC" value="{BIC}"/>
-										<DisplayListItem label="PayPal" value="{PayPal}"/>
-										
-									</List>
-							
-						</l:content>
-					</l:VerticalLayout>
-					
-					
-					
-					
-					<Button type="Emphasized" text="to Homepage" press="onPressHome">
-							
-						</Button>
-				</content>
-				<footer>
-					<Bar>
-						<contentLeft>
-							<Text text="hi user"/>
-						</contentLeft>
-						<contentRight>
-							<Text text="hi user"/>
-						</contentRight>
-					</Bar>
-				</footer>
-			</Page>
-	
+					</Button>
+					<ToolbarSpacer/>
+					<core:Icon src="sap-icon://activate"/>
+					<Text text="Feel free to view your profile" wrapping="false">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="Disappear"/>
+						</layoutData>
+					</Text>
+					<ToolbarSpacer/>
+					<Text text="Daniel Thinking" wrapping="false">
+						<layoutData>
+							<OverflowToolbarLayoutData priority="Disappear"/>
+						</layoutData>
+					</Text>
+				</tnt:ToolHeader>
+				<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="shcbc">
+					<attributes>
+						<ObjectAttribute title="rating" text="dhkbv"/>
+					</attributes>
+				</ObjectHeader>
+				<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%">
+					<l:content justifyContent="Center" alignItems="Center" alignContent="Center" >
+						<List binding="{/doc_info/0}" headerText="personal data" class="list">
+							<DisplayListItem label="Name" value="{Name}"/>
+							<DisplayListItem label="Age" value="{Age}"/>
+							<DisplayListItem label="Date of Birth" value="{Date}"/>
+							<DisplayListItem label="Nationality" value="{Nationality}"/>
+							<DisplayListItem label="Email" value="{Email}"/>
+							<DisplayListItem label="Address" value="{Address}"/>
+							<DisplayListItem label="Country" value="{Country}"/>
+							<DisplayListItem label="Phone No" value="{Phone}"/>
+							<DisplayListItem label="Specialty" value="{Specialty}"/>
+						</List>
+						<List binding="{/doc_info/0}" headerText="Medical experience data">
+							<DisplayListItem label="{medical1}"/>
+							<DisplayListItem label="{medical2}"/>
+						</List>
+						<List binding="{/doc_info/0}" headerText="Certificate and licenses">
+							<DisplayListItem label="{Certificate1}"/>
+							<DisplayListItem label="{Certificate2}"/>
+							<DisplayListItem label="{Certificate3}"/>
+						</List>
+						<List binding="{/doc_info/0}" headerText="Bio">
+							<DisplayListItem label="{Bio}"/>
+						</List>
+						<List binding="{/doc_info/0}" headerText="Bank details">
+							<DisplayListItem label="IBAN" value="{IBAN}"/>
+							<DisplayListItem label="BIC" value="{BIC}"/>
+							<DisplayListItem label="PayPal" value="{PayPal}"/>
+						</List>
+					</l:content>
+				</l:VerticalLayout>
+				<Button type="Emphasized" text="to Homepage" press="onPressHome"></Button>
+			</content>
+			<footer>
+				<Bar>
+					<contentLeft>
+						<Text text="hi user"/>
+					</contentLeft>
+					<contentRight>
+						<Text text="hi user"/>
+					</contentRight>
+				</Bar>
+			</footer>
+		</Page>
 	</App>
 </mvc:View>
