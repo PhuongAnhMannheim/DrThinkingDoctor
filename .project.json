@@ -40,10 +40,16 @@
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "excludedFolders": [],
-    "excludedFiles": []
+    "excludedFiles": [],
+    "lastBuildDateTime": "Sun, 14 Oct 2018 14:51:12 GMT"
   },
   "hybrid": {
     "hatVersion": "1.28.10",
     "appNamespace": "DrThinkingDoctor"
+  },
+  "hcpdeploy": {
+    "account": "agsdev",
+    "name": "drthinkingdoctor",
+    "lastVersionWeTriedToDeploy": "1.0.0"
   }
 }
