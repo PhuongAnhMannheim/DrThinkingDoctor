@@ -7,6 +7,12 @@ sap.ui.define([
 	return Controller.extend("DrThinkingDoctor.controller.Home", {
 		onPressSearch: function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("search");
+		},
+		onPressAppointments:function(oEvent){
+			this.getOwnerComponent().getRouter().navTo("appointment");
+		},
+		onPressProfile:function(oEvent){
+			this.getOwnerComponent().getRouter().navTo("profile");
 		}
 		
 	});

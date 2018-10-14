@@ -7,8 +7,8 @@
 		<pages><Page title="{i18n>title}">
 				<content>
 					<Button text="Search for Available Patients" press="onPressSearch"></Button>	
-					<Button text="Appointments"></Button>
-					<Button text="View and Maintain Profile"></Button>
+					<Button text="Appointments" press="onPressAppointments"></Button>
+					<Button text="View and Maintain Profile" press="onPressProfile"></Button>
 				</content>
 			</Page>
 		</pages>
