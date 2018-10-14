@@ -94,29 +94,29 @@ sap.ui.define([
 			}
 		},
 		onPressSearch: function(oEvent){
-			//this.getOwnerComponent().getRouter().navTo("search");
-			var oKey = "search";
+			this.getOwnerComponent().getRouter().navTo("search");
+			/*var oKey = "search";
 			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
 		},
 		onPressAppointments:function(oEvent){
-			//this.getOwnerComponent().getRouter().navTo("appointment");
-			var oKey = "appointments";
+			this.getOwnerComponent().getRouter().navTo("appointment");
+			/*var oKey = "appointments";
 			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
 		},
 		onPressProfile:function(oEvent){
-			//this.getOwnerComponent().getRouter().navTo("profile");
-			var oKey = "profile";
+			this.getOwnerComponent().getRouter().navTo("profile");
+			/*var oKey = "profile";
 			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
 			
 		},
 		onPressChats: function(oEvent) {
-			//this.getOwnerComponent().getRouter().navTo("chat");
-			var oKey = "chat";
+			this.getOwnerComponent().getRouter().navTo("chat");
+			/*var oKey = "chat";
 			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
 		}
 		
 	});
