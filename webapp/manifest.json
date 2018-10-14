@@ -119,7 +119,7 @@
 					"name": "chat",
 					"target": "chat"
 				},
-					{
+				{
 					"pattern": "chatroom",
 					"name": "chatroom",
 					"target": "chatroom"
@@ -148,10 +148,10 @@
 					"viewName": "Match"
 				},
 				"chat": {
-					"ViewName": "Chat"
+					"viewName": "Chat"
 				},
 				"chatroom": {
-					"ViewName": "Chatroom"
+					"viewName": "Chatroom"
 				}
 			}
 		}
