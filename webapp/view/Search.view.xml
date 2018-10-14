@@ -4,11 +4,6 @@
 		<Page title=" Welcome to Dr.thinking" class="text1">
 			<content>
 				<tnt:ToolHeader>
-					<Button icon="sap-icon://menu2" type="Transparent">
-						<layoutData>
-							<!--<OverflowToolbarLayoutData priority="NeverOverflow"/>-->
-						</layoutData>
-					</Button>
 					<ToolbarSpacer/>
 					<core:Icon src="sap-icon://activate"/>
 					<ToolbarSpacer/>
@@ -19,14 +14,14 @@
 					</Text>
 				</tnt:ToolHeader>
 				<SearchField width="90%" class="sapUiSmallMargin"/>
-			
+			<Button text="Search for Patient" press="onPressSearching"></Button>
 			<MessagePage showHeader="false"
 				 text="searching for the patients"
 				 enableFormattedText="true"
 				  description="please be patient"
 				 icon="sap-icon://filter">
 		
-	</MessagePage>
+			</MessagePage>
 			</content>
 			<footer>
 				<Bar>

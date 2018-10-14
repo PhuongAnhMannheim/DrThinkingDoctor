@@ -1,7 +1,8 @@
 <mvc:View controllerName="DrThinkingDoctor.controller.Welcome" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<App>
 		<pages><Page title="{i18n>title}">
-				<content><VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+				<content>
+					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
 						<items>
 						<Image backgroundPosition="center" src="img/dr_thinking_logo.png" width="20%">
 						</Image>
@@ -12,7 +13,6 @@
 						<Text text="or"/>
 						<Button width="12rem" text="register" press="onPressRegister"/>
 						</items>
-						
 					</VBox>	
 				</content>
 			</Page>

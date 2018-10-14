@@ -102,6 +102,11 @@
 				"pattern": "appointment",
 				"name": "appointment",
 				"target": "appointment"
+			},
+			{
+				"pattern": "match",
+				"name": "match",
+				"target": "match"
 			}
 			],
 			"targets": {
@@ -123,6 +128,10 @@
 				"appointment":
 				{
 					"viewName": "Appointment"	
+				},
+				"match":
+				{
+					"viewName": "Match"
 				}
 			}
 		}
