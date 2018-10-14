@@ -8,6 +8,7 @@
 						<!--<layoutData>
 								<OverflowToolbarLayoutData priority="NeverOverflow" />
 							</layoutData>-->
+<<<<<<< HEAD
 					</Button>
 					<ToolbarSpacer/>
 					<core:Icon src="sap-icon://activate"/>
@@ -73,5 +74,6 @@
 				</Bar>
 			</footer>
 		</Page>
+
 	</App>
 </mvc:View>
