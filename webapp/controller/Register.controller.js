@@ -1,11 +1,26 @@
 sap.ui.define([
+	"jquery.sap.global",
+	"sap/m/MessageToast",
 	"sap/ui/core/mvc/Controller"
-], function(Controller) {
+], function(jquery,MessageToast,Controller) {
 	"use strict";
 
 	return Controller.extend("DrThinkingDoctor.controller.Register", {
-		onPressProfile: function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("profile");
+		onPress: function(oEvent){
+			this.getOwnerComponent().getRouter().navTo("home");
+		},
+		handleUploadPress: function(oEvent) {
+			var oButton = this.byId("BtnUpload");
+			var msg = 'Thank you. You have been verified.';
+			oButton.setBusy(true);
+
+			// simulate delayed end of operation
+			jQuery.sap.delayedCall(5000, this, function () {
+				oButton.setBusy(false);
+				MessageToast.show(msg);
+			});
+			
+			
 		}
 	});
 });

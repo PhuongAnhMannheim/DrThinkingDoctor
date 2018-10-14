@@ -9,9 +9,9 @@
 							icon="sap-icon://menu2"
 							type="Transparent"
 							press="onSideNavButtonPress">
-							<layoutData>
+							<!--<layoutData>
 								<OverflowToolbarLayoutData priority="NeverOverflow" />
-							</layoutData>
+							</layoutData>-->
 						</Button>
 						<ToolbarSpacer/>
 						<core:Icon src="sap-icon://activate"/>
