@@ -6,34 +6,28 @@
 	xmlns:tnt="sap.tnt" 
 	controllerName="DrThinkingDoctor.controller.Search">
 	<App id="app">
-		<Page title=" Welcome to Dr.thinking" class="text1">
+			<Page 
+				title="{i18n>title}"
+				showHeader="false" >
 			<content>
-				<tnt:ToolHeader>
-					<ToolbarSpacer/>
-					<core:Icon src="sap-icon://activate"/>
-					<ToolbarSpacer/>
-					<Text text="Daniel Thinking" wrapping="false">
-					</Text>
-				</tnt:ToolHeader>
-				<SearchField width="90%" class="sapUiSmallMargin"/>
-			<Button text="Search for Patient" press="onPressSearching"></Button>
-			<MessagePage showHeader="false"
-				 text="searching for the patients"
-				 enableFormattedText="true"
-				  description="please be patient"
-				 icon="sap-icon://filter">
-			</MessagePage>
+					<VBox
+						justifyContent="Center" 
+						alignItems="Center" 
+						alignContent="Center">
+						<items>
+							<Text
+								text="Searching for available patients that fit your specialty ..." 
+								width="200px"
+								class="center"></Text>
+							<Image 
+								id="Imgloupe"
+								src="img/lupe.jpg" 
+								width="30%"
+								class="center"></Image>
+							<BusyIndicator size="4.6em" />
+						</items>
+					</VBox>	
 			</content>
-			<footer>
-				<Bar>
-					<contentLeft>
-						<Text text="hi user"/>
-					</contentLeft>
-					<contentRight>
-						<Text text="hi user"/>
-					</contentRight>
-				</Bar>
-			</footer>
 		</Page>
 	</App>
 </mvc:View>

@@ -9,7 +9,7 @@ sap.ui.define([
 			this.getOwnerComponent().getRouter().navTo("search");
 		},*/
 		onPressChat:function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("chat");
+			this.getOwnerComponent().getRouter().navTo("chatroom");
 		},
 		onPressReject:function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("reject");
