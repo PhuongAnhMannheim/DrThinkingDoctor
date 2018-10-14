@@ -15,7 +15,7 @@ sap.ui.define([
 			oButton.setBusy(true);
 
 			// simulate delayed end of operation
-			jQuery.sap.delayedCall(5000, this, function () {
+			jQuery.sap.delayedCall(3000, this, function () {
 				oButton.setBusy(false);
 				MessageToast.show(msg);
 			});

@@ -8,23 +8,22 @@
 		<pages>
 			<Page title="{i18n>title}" showHeader="false">
 				<tnt:ToolPage id="toolPage">
-		<tnt:header>
-			<tnt:ToolHeader>
-				<Button id="sideNavigationToggleButton"
-						icon="sap-icon://menu2"
-						type="Transparent"
-						press="onSideNavButtonPress">
-					
-				</Button>
-				<ToolbarSpacer></ToolbarSpacer>
-				<tnt:ToolHeaderUtilitySeparator />
-				<ToolbarSpacer></ToolbarSpacer>
-				<Text id="Header" text="Dr. Thinking"></Text>
-				<ToolbarSpacer></ToolbarSpacer>
-				<Button text="Daniel Thinking" type="Transparent" press="handleUserNamePress"></Button>
-			</tnt:ToolHeader>
-		</tnt:header>
-		<tnt:sideContent>
+					<tnt:header>
+						<tnt:ToolHeader>
+							<Button id="sideNavigationToggleButton"
+								icon="sap-icon://menu2"
+								type="Transparent"
+								press="onSideNavButtonPress">
+							</Button>
+							<ToolbarSpacer></ToolbarSpacer>
+							<tnt:ToolHeaderUtilitySeparator />
+							<ToolbarSpacer></ToolbarSpacer>
+							<Text id="Header" text="Dr. Thinking"></Text>
+							<ToolbarSpacer></ToolbarSpacer>
+							<Button text="Daniel Thinking" type="Transparent" press="handleUserNamePress"></Button>
+						</tnt:ToolHeader>
+					</tnt:header>
+				<tnt:sideContent>
 			<tnt:SideNavigation expanded="true"
 								itemSelect="onItemSelect">
 				<tnt:NavigationList items="{path: '/navigation'}">
@@ -64,7 +63,6 @@
 											width="20%"
 											class="center">
 										</Image>
-										<HBox>
 											<Button 
 												id="BtnProfile" 
 												icon="sap-icon://doctor"
@@ -78,8 +76,6 @@
 												press="onPressAppointments" 
 												width="250px" 
 												class="cube"></Button>
-										</HBox>
-										<HBox>
 											<Button 
 												id="BtnChat" 
 												text="View Conversations" 
@@ -94,7 +90,6 @@
 												press="onPressSearch" 
 												width="250px" 
 												class="cube"></Button>
-										</HBox>
 									</items>
 								</VBox>	
 							</ScrollContainer>

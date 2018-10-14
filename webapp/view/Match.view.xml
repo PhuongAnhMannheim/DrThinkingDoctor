@@ -10,9 +10,9 @@
 						<items>
 						<Text text="Great! You were matched with Omar ElRafik!"/>
 						<Text text="Omar is suffering from a sore throat and runny nose"/>
-						<Button width="12rem" text="Check Profile" press="onPressPatientProfile" type="Emphasized"/>
-						<Button width="12rem" text="Accept and chat" press="onPressChat"/>
-						<Button width="12rem" text="Reject" press="onPressReject"/>
+						<Button width="12rem" text="check profile" press="onPressPatientProfile" type="Emphasized"/>
+						<Button width="12rem" text="accept and chat" press="onPressChat"/>
+						<Button width="12rem" text="reject" press="onPressReject"/>
 						</items>
 					</VBox>	
 				</content>

@@ -9,15 +9,9 @@ sap.ui.define([
 	"use strict";
 
 	return Controller.extend("DrThinkingDoctor.controller.Chatroom", {
-		
-		
-			onInit: function () {
- 
-    
-			var oModel = new sap.ui.model.json.JSONModel("feed.json");
-
+		onInit: function () {
+ 			var oModel = new sap.ui.model.json.JSONModel("feed.json");
 			this.getView().setModel(oModel);
-
 		},
 		onPost: function(oEvent) {
 			var oFormat = DateFormat.getDateTimeInstance({ style: "medium" });
