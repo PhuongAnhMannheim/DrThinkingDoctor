@@ -36,11 +36,11 @@
 			</InputListItem>
 			<InputListItem label="Speciality">
 				<Select>
-					<core:Item key="GR" text="Ear" width="250px"/>
-					<core:Item key="MX" text="Leg" width="250px"/>
-					<core:Item key="NO" text="Eye" width="250px"/>
-					<core:Item key="NZ" text="heart" width="250px"/>
-					<core:Item key="NL" text="no specific" width="250px"/>
+					<core:Item key="GR" text="Ear" />
+					<core:Item key="MX" text="Leg" />
+					<core:Item key="NO" text="Eye" />
+					<core:Item key="NZ" text="heart" />
+					<core:Item key="NL" text="no specific" />
 				</Select>
 			</InputListItem>
 			<InputListItem label="Please attach your certifications">
