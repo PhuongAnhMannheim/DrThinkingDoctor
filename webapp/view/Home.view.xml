@@ -98,23 +98,29 @@
 									</items>
 								</VBox>	
 							</ScrollContainer>
-							<ScrollContainer id="page1"
+							<ScrollContainer id="profile"
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
-								<Text text="This is the first page"></Text>
+								<mvc:XMLView viewName="DrThinkingDoctor.view.Profile"></mvc:XMLView>
 							</ScrollContainer>
-							<ScrollContainer id="page2"
+							<ScrollContainer id="appointments"
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
-								<mvc:XMLView viewName="DrThinkingDoctor.view.Profile"/>
+								<mvc:XMLView viewName="DrThinkingDoctor.view.Appointment"></mvc:XMLView>
 							</ScrollContainer>
-							<ScrollContainer id="root2"
+							<ScrollContainer id="chat"
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
-								<Text text="This is the root page of the second element"></Text>
+								<mvc:XMLView viewName="DrThinkingDoctor.view.Chat"></mvc:XMLView>
+							</ScrollContainer>
+							<ScrollContainer id="search"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView viewName="DrThinkingDoctor.view.Search"></mvc:XMLView>
 							</ScrollContainer>
 						</pages>
 					</NavContainer>
