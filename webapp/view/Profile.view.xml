@@ -5,9 +5,9 @@
 			title="{i18n>title}"
 			showHeader="false">
 			<content>
-				<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%">
-					<l:content justifyContent="Center" alignItems="Center" alignContent="Center" >
-						<List binding="{/doc_info/0}" headerText="personal data" class="list">
+			<!--	<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%">
+					<l:content justifyContent="Center" alignItems="Center" alignContent="Center" >-->
+						<List binding="{/doc_info/0}" headerText="personal data">
 							<DisplayListItem label="Name" value="{Name}"/>
 							<DisplayListItem label="Age" value="{Age}"/>
 							<DisplayListItem label="Date of Birth" value="{Date}"/>
@@ -35,8 +35,8 @@
 							<DisplayListItem label="BIC" value="{BIC}"/>
 							<DisplayListItem label="PayPal" value="{PayPal}"/>
 						</List>
-					</l:content>
-				</l:VerticalLayout>
+				<!--	</l:content>
+				</l:VerticalLayout>-->
 			</content>
 		</Page>
 

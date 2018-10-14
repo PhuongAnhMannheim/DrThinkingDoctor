@@ -22,7 +22,7 @@ sap.ui.define([
 				icon: 'sap-icon://doctor'
 			},{
 				title: 'Appointments',
-				key: 'page2',
+				key: 'appointments',
 				icon: 'sap-icon://appointment-2'
 			},{
 				title: 'Conversations',
@@ -94,10 +94,16 @@ sap.ui.define([
 			}
 		},
 		onPressSearch: function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("search");
+			//this.getOwnerComponent().getRouter().navTo("search");
+			var oKey = "search";
+			var viewId = "__xmlview4";
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);
 		},
 		onPressAppointments:function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("appointment");
+			//this.getOwnerComponent().getRouter().navTo("appointment");
+			var oKey = "appointments";
+			var viewId = "__xmlview4";
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);
 		},
 		onPressProfile:function(oEvent){
 			//this.getOwnerComponent().getRouter().navTo("profile");
@@ -107,7 +113,10 @@ sap.ui.define([
 			
 		},
 		onPressChats: function(oEvent) {
-				this.getOwnerComponent().getRouter().navTo("chat");
+			//this.getOwnerComponent().getRouter().navTo("chat");
+			var oKey = "chat";
+			var viewId = "__xmlview4";
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);
 		}
 		
 	});
