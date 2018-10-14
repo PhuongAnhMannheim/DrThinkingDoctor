@@ -5,7 +5,8 @@
 	displayBlock="true">
 	<App id="app">
 		<pages>
-			<Page>
+			<Page
+				showHeader="false" >
 				<content>
 					
 				</content>
