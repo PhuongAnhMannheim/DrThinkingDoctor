@@ -38,10 +38,10 @@
 					</ObjectHeader>
 					
 					
-					<l:VerticalLayout class="sapUiContentPadding equalColumns" width="100%" >
+					<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%" >
 						<l:content>
 						
-									<List binding="{/doc_info/0}" headerText="personal data" >
+									<List binding="{/doc_info/0}" headerText="personal data" class="list" >
 										<DisplayListItem label="Name" value="{Name}"/>
 										<DisplayListItem label="Age" value="{Age}"/>
 										<DisplayListItem label="Date of Birth" value="{Date}"/>
