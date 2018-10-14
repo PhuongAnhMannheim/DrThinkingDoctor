@@ -5,11 +5,36 @@
 			<Page title=" Welcome to Dr.thinking" class="text1">
 				<content>
 					<tnt:ToolHeader>
-						<Button icon="sap-icon://menu2" type="Transparent">
-							<layoutData>
-								<OverflowToolbarLayoutData priority="NeverOverflow"/>
-							</layoutData>
-						</Button>
+						<MenuButton  icon="sap-icon://menu2" useDefaultActionOnly="true">
+			<menu>
+				<Menu   itemSelected="onMenuAction">
+					<items>
+						<MenuItem text="home" >
+							
+						</MenuItem>
+						<MenuItem text="view profile" >
+						
+						</MenuItem>
+						<MenuItem text="view appointment" >
+						
+						</MenuItem>
+						<MenuItem text="view chat history" >
+						
+						</MenuItem>
+						<MenuItem text="search for patients" >
+						
+						</MenuItem>
+						<MenuItem text="FAQ" >
+						
+						</MenuItem>
+						<MenuItem text="Terms and conditions" >
+						
+						</MenuItem>
+					</items>
+				</Menu>
+			</menu>
+			
+		</MenuButton>
 						<ToolbarSpacer/>
 					<core:Icon src="sap-icon://activate"/>
 					<ToolbarSpacer/>
