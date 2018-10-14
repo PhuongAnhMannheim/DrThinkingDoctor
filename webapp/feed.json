@@ -1,27 +1,21 @@
 {
 	"EntryCollection" : [{
-		"Author" : "Alexandrina Victoria",
+		"Author" : "Omar",
 		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
 		"Type" : "Request",
-		"Date" : "March 03 2013",
-		"Text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, seddiamnonumyeirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+		"Date" : "Oct 10 2018",
+		"Text" : "I also feel headache and shivering."
 	}, {
-		"Author" : "George Washington",
-		"AuthorPicUrl" : "test-resources/sap/m/images/george_washington.jpg",
+		"Author" : "Daniel Thinking",
+		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
 		"Type" : "Reply",
-		"Date" : "March 04 2013",
-		"Text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore"
+		"Date" : "Oct 10 2018",
+		"Text" : "Do you have any other symptoms?"
 	}, {
-		"Author" : "Alexandrina Victoria",
+		"Author" : "Omar",
 		"AuthorPicUrl" : "test-resources/sap/m/images/dronning_victoria.jpg",
 		"Type" : "Request",
-		"Date" : "March 05 2013",
-		"Text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat"
-	}, {
-		"Author" : "George Washington",
-		"AuthorPicUrl" : "test-resources/sap/m/images/george_washington.jpg",
-		"Type" : "Rejection",
-		"Date" : "March 07 2013",
-		"Text" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua."
+		"Date" : "Oct 10 2018",
+		"Text" : "I have been suffering from fever since yesterday."
 	}]
 }
