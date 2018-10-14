@@ -9,13 +9,15 @@
 					<FeedInput
 		post="onPost"
 		
-		class="sapUiSmallMarginTopBottom" />
+		class="sapUiSmallMarginTopBottom" 
+		icon="sap-icon://microphone"/>
+		
 	<List
 		showSeparators="Inner"
 		items="{/EntryCollection}" >
 		<FeedListItem
 			sender="{Author}"
-			icon="sap-icon://activate"
+			icon="sap-icon://customer"
 			senderPress="onSenderPress"
 			iconPress="onIconPress"
 			iconDensityAware="false"

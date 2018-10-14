@@ -3,41 +3,8 @@
 	<App id="app">
 		<Page title=" Welcome to Dr.thinking" class="text1">
 			<content>
-				<tnt:ToolHeader>
-					<MenuButton icon="sap-icon://menu2" useDefaultActionOnly="true">
-						<menu>
-							<Menu itemSelected="onMenuAction">
-								<items>
-									<MenuItem text="home"></MenuItem>
-									<MenuItem text="view profile"></MenuItem>
-									<MenuItem text="view appointment"></MenuItem>
-									<MenuItem text="view chat history"></MenuItem>
-									<MenuItem text="search for patients"></MenuItem>
-									<MenuItem text="FAQ"></MenuItem>
-									<MenuItem text="Terms and conditions"></MenuItem>
-								</items>
-							</Menu>
-						</menu>
-					</MenuButton>
-					<ToolbarSpacer/>
-					<core:Icon src="sap-icon://activate"/>
-					<Text text="Feel free to view your profile" wrapping="false">
-						<layoutData>
-							<OverflowToolbarLayoutData priority="Disappear"/>
-						</layoutData>
-					</Text>
-					<ToolbarSpacer/>
-					<Text text="Daniel Thinking" wrapping="false">
-						<layoutData>
-							<OverflowToolbarLayoutData priority="Disappear"/>
-						</layoutData>
-					</Text>
-				</tnt:ToolHeader>
-				<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="shcbc">
-					<attributes>
-						<ObjectAttribute title="rating" text="dhkbv"/>
-					</attributes>
-				</ObjectHeader>
+				
+				
 				<Panel>
 					
 					
@@ -45,45 +12,42 @@
 					
 							<List headerText="Chatting list">
 								<items>
-									<ObjectListItem title="Omar" type="Active" press="onListItemPress"
-										number="80">
-										<firstStatus>
-											<ObjectStatus text="yesterday" />
+									<ObjectListItem title="Omar" type="Active" press="onListItemPress" icon="sap-icon://wounds-doc">
+										<firstStatus icon="sap-icon://email">
+											<ObjectStatus text="yesterday" icon="sap-icon://email"/>
 										</firstStatus>
 										<attributes>
-											<ObjectAttribute text="info"/>
-											<ObjectAttribute text="information"/>
+											<ObjectAttribute text="status:offline" />
 										</attributes>
 									</ObjectListItem>
-									<ObjectListItem title="Omar" type="Active" press="onListItemPress"
-										number="80">
+									<ObjectListItem title="Anh" type="Active" press="onListItemPress"
+									icon="sap-icon://wounds-doc">
 										<firstStatus>
-											<ObjectStatus text="yesterday" />
+											<ObjectStatus text="yesterday" icon="sap-icon://email"/>
 										</firstStatus>
 										<attributes>
-											<ObjectAttribute text="info"/>
-											<ObjectAttribute text="information"/>
+											<ObjectAttribute text="status:online"/>
+											
 										</attributes>
 									</ObjectListItem>
-									<ObjectListItem title="Omar" type="Active" press="onListItemPress"
-										number="80">
+									<ObjectListItem title="Qian" type="Active" press="onListItemPress"
+										icon="sap-icon://wounds-doc">
 										<firstStatus>
-											<ObjectStatus text="yesterday" />
+											<ObjectStatus text="Oct 11" icon="sap-icon://email"/>
 											
 										</firstStatus>
 										<attributes>
-											<ObjectAttribute text="info"/>
-											<ObjectAttribute text="information"/>
+											<ObjectAttribute text="status:online"/>
 										</attributes>
 									</ObjectListItem>
-									<ObjectListItem title="Omar" type="Active" press="onListItemPress"
-										number="80">
+									<ObjectListItem title="Yumna" type="Active" press="onListItemPress"
+										icon="sap-icon://wounds-doc">
 										<firstStatus>
-											<ObjectStatus text="yesterday" />
+											<ObjectStatus text="Oct 10" icon="sap-icon://email"/>
+										
 										</firstStatus>
 										<attributes>
-											<ObjectAttribute text="info"/>
-											<ObjectAttribute text="information"/>
+											<ObjectAttribute text="status:offline"/>
 										</attributes>
 									</ObjectListItem>
 								</items>
@@ -92,16 +56,7 @@
 					
 				</Panel>
 			</content>
-			<footer>
-				<Bar>
-					<contentLeft>
-						<Text text="hi user"/>
-					</contentLeft>
-					<contentRight>
-						<Text text="hi user"/>
-					</contentRight>
-				</Bar>
-			</footer>
+		
 		</Page>
 	</App>
 </mvc:View>
