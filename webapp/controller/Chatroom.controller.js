@@ -26,7 +26,7 @@ sap.ui.define([
 			// create new entry
 			var sValue = oEvent.getParameter("value");
 			var oEntry = {
-				Author: "Daniel Thinking",
+				Author: "Alexandrina Victoria",
 				
 				Type: "Reply",
 				Date: "" + sDate,

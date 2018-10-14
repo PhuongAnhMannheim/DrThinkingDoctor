@@ -38,52 +38,55 @@
 					</ObjectHeader>
 					
 					
-					<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%" >
+					<l:VerticalLayout class="sapUiContentPadding equalColumns" width="500px" >
 						<l:content>
-						
-									<List binding="{/doc_info/0}" headerText="personal data" class="list" >
+							<FlexBox width="500px"  alignItems="Center">
+								<items>
+									<List binding="{/doc_info/0}" headerText="personal data" width="200px">
 										<DisplayListItem label="Name" value="{Name}"/>
-										<DisplayListItem label="Age" value="{Age}"/>
-										<DisplayListItem label="Date of Birth" value="{Date}"/>
-										<DisplayListItem label="Nationality" value="{Nationality}"/>
-										<DisplayListItem label="Email" value="{Email}"/>
-										<DisplayListItem label="Address" value="{Address}"/>
-										<DisplayListItem label="Country" value="{Country}"/>
-										<DisplayListItem label="Phone No" value="{Phone}"/>
-										<DisplayListItem label="Specialty" value="{Specialty}"/>
-										
+										<DisplayListItem label="Age" value="{age}"/>
 									</List>
-									
-							
-							<List binding="{/doc_info/0}" headerText="Medical experience data" >
-										<DisplayListItem label="{medical1}"/>
-										<DisplayListItem label="{medical2}"/>
+									<List binding="{/doc_info/0}" headerText="Medical experience data" width="200px">
+										<DisplayListItem label="Name" value="{Name}"/>
+										<DisplayListItem label="Age" value="{age}"/>
 									</List>
-									<List binding="{/doc_info/0}" headerText="Certificate and licenses" >
-										<DisplayListItem label="{Certificate1}"/>
-										<DisplayListItem label="{Certificate2}"/>
-									    <DisplayListItem label="{Certificate3}"/>
+								</items>
+							</FlexBox>
+						</l:content>
+					</l:VerticalLayout>
+					<l:VerticalLayout class="sapUiContentPadding equalColumns" width="500px">
+						<l:content>
+							<FlexBox width="95%" class="columns" alignItems="Stretch">
+								<items>
+									<List binding="{/doc_info/0}" headerText="Certificate and licenses">
+										<DisplayListItem label="Name" value="{Name}"/>
+										<DisplayListItem label="Age" value="{age}"/>
 									</List>
-									
-							
-							<List binding="{/doc_info/0}" headerText="Bio" >
-										<DisplayListItem label="{Bio}"/>
-										
+									<List binding="{/doc_info/0}" headerText="biO">
+										<DisplayListItem label="Name" value="{Name}"/>
+										<DisplayListItem label="Age" value="{age}"/>
 									</List>
-									
-									<List binding="{/doc_info/0}" headerText="Bank details" >
-										<DisplayListItem label="IBAN" value="{IBAN}"/>
-										<DisplayListItem label="BIC" value="{BIC}"/>
-										<DisplayListItem label="PayPal" value="{PayPal}"/>
-										
-									</List>
-							
+								</items>
+							</FlexBox>
 						</l:content>
 					</l:VerticalLayout>
 					
-					
-					
-					
+					<l:VerticalLayout class="sapUiContentPadding equalColumns" width="100%">
+						<l:content>
+							<FlexBox width="95%" class="columns" alignItems="Stretch">
+								<items>
+									<List binding="{/doc_info/0}" headerText="{Name}">
+										<DisplayListItem label="Name" value="{Name}"/>
+										<DisplayListItem label="Age" value="{age}"/>
+									</List>
+									<List binding="{/doc_info/0}" headerText="{Name}">
+										<DisplayListItem label="Name" value="{Name}"/>
+										<DisplayListItem label="Age" value="{age}"/>
+									</List>
+								</items>
+							</FlexBox>
+						</l:content>
+					</l:VerticalLayout>
 					<Button type="Emphasized" text="to Homepage" press="onPressHome">
 							
 						</Button>
