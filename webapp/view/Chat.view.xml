@@ -1,8 +1,11 @@
 <mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
 	controllerName="DrThinkingDoctor.controller.Chat">
 	<App id="app">
-		<Page title=" Welcome to Dr.thinking" class="text1">
+		<Page 
+			title="{i18n>title}"
+			showHeader="false" >
 			<content>
+<<<<<<< HEAD
 				
 				
 				<Panel>
@@ -55,8 +58,58 @@
 					
 					
 				</Panel>
+=======
+				<List headerText="Chatting list">
+					<items>
+						<ObjectListItem title="Omar" type="Active" press="onListItemPress"
+							number="80">
+							<firstStatus>
+								<ObjectStatus text="yesterday" />
+							</firstStatus>
+							<attributes>
+								<ObjectAttribute text="info"/>
+								<ObjectAttribute text="information"/>
+							</attributes>
+						</ObjectListItem>
+						<ObjectListItem title="Omar" type="Active" press="onListItemPress"
+							number="80">
+							<firstStatus>
+								<ObjectStatus text="yesterday" />
+							</firstStatus>
+							<attributes>
+								<ObjectAttribute text="info"/>
+								<ObjectAttribute text="information"/>
+							</attributes>
+						</ObjectListItem>
+						<ObjectListItem title="Omar" type="Active" press="onListItemPress"
+							number="80">
+							<firstStatus>
+								<ObjectStatus text="yesterday" />
+								
+							</firstStatus>
+							<attributes>
+								<ObjectAttribute text="info"/>
+								<ObjectAttribute text="information"/>
+							</attributes>
+						</ObjectListItem>
+						<ObjectListItem title="Omar" type="Active" press="onListItemPress"
+							number="80">
+							<firstStatus>
+								<ObjectStatus text="yesterday" />
+							</firstStatus>
+							<attributes>
+								<ObjectAttribute text="info"/>
+								<ObjectAttribute text="information"/>
+							</attributes>
+						</ObjectListItem>
+					</items>
+				</List>
+>>>>>>> refs/heads/master
 			</content>
+<<<<<<< HEAD
 		
+=======
+>>>>>>> refs/heads/master
 		</Page>
 	</App>
 </mvc:View>
