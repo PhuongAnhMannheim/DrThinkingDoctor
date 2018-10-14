@@ -1,33 +1,17 @@
-<mvc:View controllerName="DrThinkingDoctor.controller.Welcome" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc"
-	displayBlock="true" xmlns="sap.m">
+<mvc:View controllerName="DrThinkingDoctor.controller.Welcome" xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
 	<App>
-		<pages>
-			<Page title="{i18n>title}">
+		<pages><Page title="{i18n>title}">
 				<content>
 					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
 						<items>
-						<Image
-							backgroundPosition="center"
-							src="img/dr_thinking_logo.png"
-							width="50%">
+						<Image backgroundPosition="center" src="img/dr_thinking_logo.png" width="50%">
 						</Image>
-						<Label 
-							text="Welcome to Dr. Thinking" 
-							class="text2"/>
-						<Input placeholder="user name / e-mail" 
-							required="true"/>
-						<Input placeholder="passwort" 
-							required="true"/>
-						<Button 
-							width="12rem" 
-							text="login" 
-							type="Emphasized" 
-							press="action"/>
+						<Label text="Welcome to Dr. Thinking" class="text2"/>
+						<Input placeholder="user name / e-mail" required="true"/>
+						<Input placeholder="passwort" required="true"/>
+						<Button width="12rem" text="login" type="Emphasized" press="action"/>
 						<Text text="or"/>
-						<Button 
-							width="12rem" 
-							text="register" 
-							press="action"/>
+						<Button width="12rem" text="register" press="action"/>
 						</items>
 					</VBox>	
 				</content>
