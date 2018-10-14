@@ -78,9 +78,13 @@
 				<Label text="Country" />
 				<Select id="country" selectedKey="{Country}">
 					<items>
-						<core:Item text="England" key="England"/>
-						<core:Item text="Germany" key="Germany"/>
-						<core:Item text="USA" key="USA"/>
+						<core:Item text="Allergists" key="Allergists"/>
+						<core:Item text="Anesthesiologists" key="Anesthesiologists"/>
+						<core:Item text="Dermatologists" key="Dermatologists"/>
+						<core:Item text="Colon" key="Colon"/>
+						<core:Item text="Endocrinologists" key="Endocrinologists"/>
+						<core:Item text="Gastroenterologists " key="Gastroenterologists "/>
+						<core:Item text="others" key="others"/>
 					</items>
 				</Select>
 			</f:content>
