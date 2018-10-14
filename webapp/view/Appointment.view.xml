@@ -10,36 +10,39 @@
 						</Toolbar>
 					</headerToolbar>
 					
-						<FlexBox height="100px" justifyContent="Center" class="Center">
-							<items>
+						<FlexBox height="200px" justifyContent="Center">
+							<items icon="sap-icon://search">
 								<List binding="{/p_info/0}" width="300px">
 									<DisplayListItem label="Name" value="{Name_1}"/>
 									<DisplayListItem label="Illness" value="{illness_1}"/>
 									<DisplayListItem label="Date" value="{date_1}"/>
 									<DisplayListItem label="Time" value="{Time_1}"/>
 								</List>
+									
 								<List binding="{/p_info1/0}" width="300px">
 									<DisplayListItem label="Name" value="{Name_2}"/>
 									<DisplayListItem label="Illness" value="{illness_2}"/>
 									<DisplayListItem label="Date" value="{date_2}"/>
 									<DisplayListItem label="Time" value="{Time_2}"/>
 								</List>
-							</items>
+									</items>
 						</FlexBox>
+							
 				
 				</Panel>
 				
 				<Panel>
 					<headerToolbar>
 						<Toolbar>
-							<Title level="H2" class="center" text="Previous appointment"/>
+							<Title level="H2" class="center" text="Previous appointment" />
 						</Toolbar> 
 					</headerToolbar>
 					
-						<FlexBox height="100px" justifyContent="Center">
-							<items>
-								<List binding="{/p_info2/0}" width="300px">
-									<DisplayListItem label="Name" value="{Name_3}"/>
+						<FlexBox height="200px" justifyContent="Center">
+							<items icon="sap-icon://search">
+								
+								<List binding="{/p_info2/0}" width="300px" >
+									<DisplayListItem label="Name" value="{Name_3}" />
 									<DisplayListItem label="Illness" value="{illness_3}"/>
 									<DisplayListItem label="Date" value="{date_3}"/>
 									<DisplayListItem label="Time" value="{Time_3}"/>
