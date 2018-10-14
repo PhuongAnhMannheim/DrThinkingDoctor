@@ -6,6 +6,14 @@ sap.ui.define([
 	return Controller.extend("DrThinkingDoctor.controller.Profile", {
 		onPressHome: function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("home");
+		},
+			onInit: function () {
+ 
+    
+			var oModel = new sap.ui.model.json.JSONModel("profile.json");
+
+			this.getView().setModel(oModel);
+
 		}
 	});
 });

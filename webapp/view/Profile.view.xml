@@ -3,32 +3,14 @@
 	<App id="app">
 		<Page title=" Welcome to Dr.thinking">
 			<content>
-				<tnt:ToolHeader>
-					<Button id="sideNavigationToggleButton" icon="sap-icon://menu2" type="Transparent" press="onSideNavButtonPress">
-						<!--<layoutData>
-								<OverflowToolbarLayoutData priority="NeverOverflow" />
-							</layoutData>-->
-<<<<<<< HEAD
-					</Button>
-					<ToolbarSpacer/>
-					<core:Icon src="sap-icon://activate"/>
-					<Text text="Feel free to view your profile" wrapping="false">
-						<layoutData>
-							<OverflowToolbarLayoutData priority="Disappear"/>
-						</layoutData>
-					</Text>
-					<ToolbarSpacer/>
-					<Text text="Daniel Thinking" wrapping="false">
-						<layoutData>
-							<OverflowToolbarLayoutData priority="Disappear"/>
-						</layoutData>
-					</Text>
-				</tnt:ToolHeader>
+				
+				
 				<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="shcbc">
 					<attributes>
 						<ObjectAttribute title="rating" text="dhkbv"/>
 					</attributes>
 				</ObjectHeader>
+				
 				<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%">
 					<l:content justifyContent="Center" alignItems="Center" alignContent="Center" >
 						<List binding="{/doc_info/0}" headerText="personal data" class="list">
@@ -62,6 +44,7 @@
 					</l:content>
 				</l:VerticalLayout>
 				<Button type="Emphasized" text="to Homepage" press="onPressHome"></Button>
+				
 			</content>
 			<footer>
 				<Bar>
