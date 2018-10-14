@@ -8,9 +8,6 @@
 					<core:Icon src="sap-icon://activate"/>
 					<ToolbarSpacer/>
 					<Text text="Daniel Thinking" wrapping="false">
-						<layoutData>
-							<OverflowToolbarLayoutData priority="Disappear"/>
-						</layoutData>
 					</Text>
 				</tnt:ToolHeader>
 				<SearchField width="90%" class="sapUiSmallMargin"/>
@@ -20,7 +17,6 @@
 				 enableFormattedText="true"
 				  description="please be patient"
 				 icon="sap-icon://filter">
-		
 			</MessagePage>
 			</content>
 			<footer>
