@@ -11,6 +11,7 @@
 					</attributes>
 				</ObjectHeader>
 				
+				
 				<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%">
 					<l:content justifyContent="Center" alignItems="Center" alignContent="Center" >
 						<List binding="{/doc_info/0}" headerText="personal data" class="list">
