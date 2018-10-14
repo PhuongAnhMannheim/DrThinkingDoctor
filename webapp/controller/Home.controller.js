@@ -18,7 +18,7 @@ sap.ui.define([
 				key: 'home'
 			},{
 				title: 'Profile',
-				key: 'page1',
+				key: 'profile',
 				icon: 'sap-icon://doctor'
 			},{
 				title: 'Appointments',
@@ -100,7 +100,11 @@ sap.ui.define([
 			this.getOwnerComponent().getRouter().navTo("appointment");
 		},
 		onPressProfile:function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("profile");
+			//this.getOwnerComponent().getRouter().navTo("profile");
+			var oKey = "profile";
+			var viewId = "__xmlview4";
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);
+			
 		},
 		onPressChats: function(oEvent) {
 				this.getOwnerComponent().getRouter().navTo("chat");

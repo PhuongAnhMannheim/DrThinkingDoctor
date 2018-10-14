@@ -1,17 +1,10 @@
 <mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
 	controllerName="DrThinkingDoctor.controller.Profile">
 	<App id="app">
-		<Page title=" Welcome to Dr.thinking">
+		<Page 
+			title="{i18n>title}"
+			showHeader="false">
 			<content>
-				
-				
-				<ObjectHeader responsive="true" intro="Dr.think" title="Dr.thinking" number="shcbc">
-					<attributes>
-						<ObjectAttribute title="rating" text="dhkbv"/>
-					</attributes>
-				</ObjectHeader>
-				
-				
 				<l:VerticalLayout class="sapUiContentPadding equalColumns" width="50%">
 					<l:content justifyContent="Center" alignItems="Center" alignContent="Center" >
 						<List binding="{/doc_info/0}" headerText="personal data" class="list">
@@ -44,19 +37,7 @@
 						</List>
 					</l:content>
 				</l:VerticalLayout>
-				<Button type="Emphasized" text="to Homepage" press="onPressHome"></Button>
-				
 			</content>
-			<footer>
-				<Bar>
-					<contentLeft>
-						<Text text="hi user"/>
-					</contentLeft>
-					<contentRight>
-						<Text text="hi user"/>
-					</contentRight>
-				</Bar>
-			</footer>
 		</Page>
 
 	</App>

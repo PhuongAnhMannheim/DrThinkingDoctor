@@ -98,11 +98,11 @@
 									</items>
 								</VBox>	
 							</ScrollContainer>
-							<ScrollContainer id="page1"
+							<ScrollContainer id="profile"
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
-								<Text text="This is the first page"></Text>
+								<mvc:XMLView viewName="DrThinkingDoctor.view.Profile"/>
 							</ScrollContainer>
 							<ScrollContainer id="page2"
 											 horizontal="false"
