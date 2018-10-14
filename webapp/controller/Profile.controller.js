@@ -3,6 +3,7 @@ sap.ui.define([
 	"sap/ui/core/mvc/Controller"
 ], function(MessageToast, Controller) {
 	"use strict";
+	
 
 	return Controller.extend("DrThinkingDoctor.controller.Profile", {
 		
