@@ -11,6 +11,8 @@
 							</layoutData>
 						</Button>
 						
+						
+						
 						<ToolbarSpacer/>
 						<core:Icon src="sap-icon://activate"/>
 						<Text text="Feel free to view your profile" wrapping="false">
