@@ -5,9 +5,7 @@
 			title="{i18n>title}"
 			showHeader="false" >
 			<content>
-<<<<<<< HEAD
-				
-				
+
 				<Panel>
 					
 					
@@ -58,58 +56,7 @@
 					
 					
 				</Panel>
-=======
-				<List headerText="Chatting list">
-					<items>
-						<ObjectListItem title="Omar" type="Active" press="onListItemPress"
-							number="80">
-							<firstStatus>
-								<ObjectStatus text="yesterday" />
-							</firstStatus>
-							<attributes>
-								<ObjectAttribute text="info"/>
-								<ObjectAttribute text="information"/>
-							</attributes>
-						</ObjectListItem>
-						<ObjectListItem title="Omar" type="Active" press="onListItemPress"
-							number="80">
-							<firstStatus>
-								<ObjectStatus text="yesterday" />
-							</firstStatus>
-							<attributes>
-								<ObjectAttribute text="info"/>
-								<ObjectAttribute text="information"/>
-							</attributes>
-						</ObjectListItem>
-						<ObjectListItem title="Omar" type="Active" press="onListItemPress"
-							number="80">
-							<firstStatus>
-								<ObjectStatus text="yesterday" />
-								
-							</firstStatus>
-							<attributes>
-								<ObjectAttribute text="info"/>
-								<ObjectAttribute text="information"/>
-							</attributes>
-						</ObjectListItem>
-						<ObjectListItem title="Omar" type="Active" press="onListItemPress"
-							number="80">
-							<firstStatus>
-								<ObjectStatus text="yesterday" />
-							</firstStatus>
-							<attributes>
-								<ObjectAttribute text="info"/>
-								<ObjectAttribute text="information"/>
-							</attributes>
-						</ObjectListItem>
-					</items>
-				</List>
->>>>>>> refs/heads/master
-			</content>
-<<<<<<< HEAD
-		
-=======
->>>>>>> refs/heads/master
+</content>
 		</Page>
 	</App>
 </mvc:View>
