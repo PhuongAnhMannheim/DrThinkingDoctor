@@ -82,13 +82,22 @@
 				"pattern": "register",
 				"name": "register",
 				"target": "register"
-			}],
+			},
+			{
+				"pattern": "profile",
+				"name": "profile",
+				"target": "profile"
+			}
+			],
 			"targets": {
 				"welcome": {
 					"viewName": "Welcome"
 				},
 				"register": {
 					"viewName": "Register" 
+				},
+				"profile": {
+					"viewName": "Profile" 
 				}
 			}
 		}

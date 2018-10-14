@@ -61,7 +61,7 @@
 		<l:VerticalLayout>
 			<u:FileUploader id="fileUploader" name="myFileUpload" uploadUrl="upload/" tooltip="Upload your file to the local server"
 				uploadComplete="handleUploadComplete"/>
-			<Button text="register" press="handleUploadPress" type="Emphasized"/>
+			<Button text="register" press="onPressRegister" type="Emphasized"/>
 		</l:VerticalLayout>
 		
 			<footer>
