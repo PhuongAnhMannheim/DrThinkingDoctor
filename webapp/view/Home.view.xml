@@ -9,6 +9,7 @@
 					<Button text="Search for Available Patients" press="onPressSearch"></Button>	
 					<Button text="Appointments" press="onPressAppointments"></Button>
 					<Button text="View and Maintain Profile" press="onPressProfile"></Button>
+					<Button text="View Chats" press="onPressChats"></Button>
 				</content>
 			</Page>
 		</pages>

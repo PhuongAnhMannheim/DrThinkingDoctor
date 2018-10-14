@@ -13,6 +13,9 @@ sap.ui.define([
 		},
 		onPressProfile:function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("profile");
+		},
+		onPressChats: function(oEvent) {
+				this.getOwnerComponent().getRouter().navTo("chat");
 		}
 		
 	});

@@ -113,6 +113,16 @@
 					"pattern": "match",
 					"name": "match",
 					"target": "match"
+				},
+				{
+					"pattern": "chat",
+					"name": "chat",
+					"target": "chat"
+				},
+					{
+					"pattern": "chatroom",
+					"name": "chatroom",
+					"target": "chatroom"
 				}
 			],
 			"targets": {
@@ -136,6 +146,12 @@
 				},
 				"match": {
 					"viewName": "Match"
+				},
+				"chat": {
+					"ViewName": "Chat"
+				},
+				"chatroom": {
+					"ViewName": "Chatroom"
 				}
 			}
 		}
