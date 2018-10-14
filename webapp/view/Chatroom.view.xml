@@ -1,5 +1,5 @@
-<mvc:View controllerName="DrThinkingDoctor.controller.Home" 
-	xmlns:html="http://www.w3.org/1999/xhtml" 
+<mvc:View controllerName="DrThinkingDoctor.controller.Chatroom" 
+	
 	xmlns:mvc="sap.ui.core.mvc" 
 	displayBlock="true" 
 	xmlns="sap.m">
@@ -7,23 +7,23 @@
 		<pages><Page title="{i18n>title}">
 				<content>
 					<FeedInput
-						post="onPost"
-						icon="test-resources/sap/m/images/dronning_victoria.jpg"
-						class="sapUiSmallMarginTopBottom" />
-					<List
-						showSeparators="Inner"
-						items="{/EntryCollection}" >
-						<FeedListItem
-							sender="{Author}"
-							icon="{AuthorPicUrl}"
-							senderPress="onSenderPress"
-							iconPress="onIconPress"
-							iconDensityAware="false"
-							info="{Type}"
-							timestamp="{Date}"
-							text="{Text}"
-							convertLinksToAnchorTags="All"/>
-					</List>
+		post="onPost"
+		
+		class="sapUiSmallMarginTopBottom" />
+	<List
+		showSeparators="Inner"
+		items="{/EntryCollection}" >
+		<FeedListItem
+			sender="{Author}"
+			icon="sap-icon://activate"
+			senderPress="onSenderPress"
+			iconPress="onIconPress"
+			iconDensityAware="false"
+			info="{Type}"
+			timestamp="{Date}"
+			text="{Text}"
+			convertLinksToAnchorTags="All"/>
+	</List>
 				</content>
 			</Page>
 		</pages>

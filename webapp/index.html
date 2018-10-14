@@ -26,6 +26,11 @@
 					})
 				}).placeAt("content");
 			});
+			
+			 var oModel = new sap.ui.model.json.JSONModel();
+     // Load JSON in model
+    oModel.loadData("feed.json");
+    sap.ui.getCore().setModel(oModel);
 		</script>
 	</head>
 
