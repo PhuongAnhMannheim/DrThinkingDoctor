@@ -8,20 +8,14 @@
     {
       "templateId": "ui5template.basicSAPUI5ApplicationProjectCommon",
       "templateVersion": "1.32.0",
-      "dateTimeStamp": "Sun, 14 Oct 2018 10:52:46 GMT"
+      "dateTimeStamp": "Sun, 14 Oct 2018 11:04:48 GMT"
     },
     {
       "templateId": "ui5template.basicSAPUI5ApplicationProject",
       "templateVersion": "1.40.12",
-      "dateTimeStamp": "Sun, 14 Oct 2018 10:52:46 GMT"
+      "dateTimeStamp": "Sun, 14 Oct 2018 11:04:48 GMT"
     }
   ],
-  "codeCheckingTriggers": {
-    "notifyBeforePush": true,
-    "notifyBeforePushLevel": "Error",
-    "blockPush": false,
-    "blockPushLevel": "Error"
-  },
   "translation": {
     "translationDomain": "",
     "supportedLanguages": "en,fr,de",
@@ -34,6 +28,12 @@
       "xml": "fioriXmlAnalysis",
       "js": "fioriJsValidator"
     }
+  },
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
   },
   "build": {
     "buildRequired": true,

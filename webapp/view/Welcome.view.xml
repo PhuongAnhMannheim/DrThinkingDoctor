@@ -4,7 +4,32 @@
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
-					<Text text="Hello Xia"></Text>
+					<VBox fitContainer="true" justifyContent="Center" alignItems="Center" alignContent="Center">
+						<items>
+						<Image
+							backgroundPosition="center"
+							src="img/dr_thinking_logo.png"
+							width="50%">
+						</Image>
+						<Label 
+							text="Welcome to Dr. Thinking" 
+							class="text2"/>
+						<Input placeholder="user name / e-mail" 
+							required="true"/>
+						<Input placeholder="passwort" 
+							required="true"/>
+						<Button 
+							width="12rem" 
+							text="login" 
+							type="Emphasized" 
+							press="action"/>
+						<Text text="or"/>
+						<Button 
+							width="12rem" 
+							text="register" 
+							press="action"/>
+						</items>
+					</VBox>	
 				</content>
 			</Page>
 		</pages>
