@@ -5,6 +5,7 @@
 			<Page title=" Welcome to Dr.thinking" class="text1">
 		<tnt:ToolHeader>
 						
+						
 						<ToolbarSpacer/>
 						<core:Icon src="sap-icon://activate"/>
 						<Text text="Enter your credential to register" wrapping="false">
@@ -13,6 +14,7 @@
 							</layoutData>
 						</Text>
 						<ToolbarSpacer/>
+						
 						
 					</tnt:ToolHeader>
 		<List headerText="Doctor Registeration">
