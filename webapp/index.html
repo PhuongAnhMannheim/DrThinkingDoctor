@@ -5,31 +5,20 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta charset="UTF-8">
 
-		<title>test</title>
-		<script type="text/javascript">
-    window["sap-ui-config"] = {
-        "language" : "en"
-    }
-</script>
+		<title>ThinkingDoctor</title>
+
 		<script id="sap-ui-bootstrap"
-			src="https://sapui5.netweaver.ondemand.com/resources/sap-ui-core.js"
-			data-sap-ui-libs="sap.m,sap.ui.commons"
-			data-sap-ui-theme="sap_bluecrystal"
+			src="../../resources/sap-ui-core.js"
+			data-sap-ui-libs="sap.m"
+			data-sap-ui-theme="sap_belize"
 			data-sap-ui-compatVersion="edge"
-			data-sap-ui-xx-bindingSyntax="complex"
-			data-sap-ui-resourceroots='{"DrThinkingDoctor": ""}'
-			
-			
-			>
+			data-sap-ui-resourceroots='{"DrThinkingDoctor": ""}'>
 		</script>
 
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 
-		<script type="text/javascript">
-	
-		
-	
-      sap.ui.getCore().attachInit(function() {
+		<script>
+			sap.ui.getCore().attachInit(function() {
 				new sap.m.Shell({
 					app: new sap.ui.core.ComponentContainer({
 						height : "100%",
@@ -37,18 +26,10 @@
 					})
 				}).placeAt("content");
 			});
-		 	
-    
-
-    
-	  
-	</script>
-		
-		
+		</script>
 	</head>
 
 	<body class="sapUiBody" id="content">
-	
 	</body>
 
 </html>

@@ -1,25 +1,27 @@
 {
   "projectType": [
     "sap.watt.uitools.ide.fiori",
+    "com.watt.common.builder.sapui5clientbuild",
     "com.sap.webide.hybrid.cordova"
   ],
   "generation": [
     {
-      "templateId": "ui5template.basicSAPUI5ApplicationProject",
+      "templateId": "ui5template.basicSAPUI5ApplicationProjectCommon",
       "templateVersion": "1.32.0",
-      "dateTimeStamp": "Wed, 13 Jan 2016 12:56:36 GMT"
+      "dateTimeStamp": "Sun, 14 Oct 2018 10:52:46 GMT"
     },
     {
-      "templateId": "servicecatalog.connectivityComponent",
-      "templateVersion": "0.0.0",
-      "dateTimeStamp": "Wed, 13 Jan 2016 12:57:19 GMT"
-    },
-    {
-      "templateId": "wysiwygtemplate.quickStart",
-      "templateVersion": "0.0.0",
-      "dateTimeStamp": "Thu, 14 Jan 2016 15:09:19 GMT"
+      "templateId": "ui5template.basicSAPUI5ApplicationProject",
+      "templateVersion": "1.40.12",
+      "dateTimeStamp": "Sun, 14 Oct 2018 10:52:46 GMT"
     }
   ],
+  "codeCheckingTriggers": {
+    "notifyBeforePush": true,
+    "notifyBeforePushLevel": "Error",
+    "blockPush": false,
+    "blockPushLevel": "Error"
+  },
   "translation": {
     "translationDomain": "",
     "supportedLanguages": "en,fr,de",
@@ -27,16 +29,21 @@
     "defaultI18NPropertyFile": "i18n.properties",
     "resourceModelName": "i18n"
   },
-  "dataBinding": {
-    "/webapp/view/View1.view.xml": {
-      "entitySet": "Entity1_Set"
+  "basevalidator": {
+    "services": {
+      "xml": "fioriXmlAnalysis",
+      "js": "fioriJsValidator"
     }
   },
-  "mockpreview": {
-    "mockUri": "localService/metadata.xml",
-    "metadataFilePath": "localService/metadata.xml",
-    "loadJSONFiles": true,
-    "loadCustomRequests": false,
-    "mockRequestsFilePath": ""
+  "build": {
+    "buildRequired": true,
+    "sourceFolder": "webapp",
+    "targetFolder": "dist",
+    "excludedFolders": [],
+    "excludedFiles": []
+  },
+  "hybrid": {
+    "hatVersion": "1.28.10",
+    "appNamespace": "DrThinkingDoctor"
   }
 }

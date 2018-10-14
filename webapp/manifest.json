@@ -1,7 +1,6 @@
 {
-	"_version": "1.1.0",
+	"_version": "1.7.0",
 	"sap.app": {
-		"_version": "1.3.0",
 		"id": "DrThinkingDoctor",
 		"type": "application",
 		"i18n": "i18n/i18n.properties",
@@ -10,25 +9,13 @@
 		},
 		"title": "{{appTitle}}",
 		"description": "{{appDescription}}",
-		"resources": "resources.json",
-		"ach": "ach",
 		"sourceTemplate": {
-			"id": "servicecatalog.connectivityComponent",
-			"version": "0.0.0"
-		},
-		"dataSources": {
-			"mainService": {
-				"type": "OData",
-				"settings": {
-					"odataVersion": "2.0",
-					"localUri": "localService/metadata.xml"
-				},
-				"uri": "localService/metadata.xml"
-			}
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
 		}
 	},
+
 	"sap.ui": {
-		"_version": "1.3.0",
 		"technology": "UI5",
 		"icons": {
 			"icon": "",
@@ -45,13 +32,14 @@
 		},
 		"supportedThemes": [
 			"sap_hcb",
-			"sap_bluecrystal"
+			"sap_belize"
+
 		]
 	},
+
 	"sap.ui5": {
-		"_version": "1.2.0",
 		"rootView": {
-			"viewName": "DrThinkingDoctor.view.View1",
+			"viewName": "DrThinkingDoctor.view.Welcome",
 			"type": "XML"
 		},
 		"dependencies": {
@@ -59,7 +47,11 @@
 			"libs": {
 				"sap.ui.core": {},
 				"sap.m": {},
-				"sap.ui.layout": {}
+				"sap.ui.layout": {},
+				"sap.ushell": {},
+				"sap.collaboration": {},
+				"sap.ui.comp": {},
+				"sap.uxap": {}
 			}
 		},
 		"contentDensities": {
@@ -72,81 +64,12 @@
 				"settings": {
 					"bundleName": "DrThinkingDoctor.i18n.i18n"
 				}
-			},
-			"": {
-				"dataSource": "mainService"
 			}
 		},
 		"resources": {
-			"css": [
-				{
-					"uri": "css/style.css"
-				}
-			]
-		},
-		"routing": {
-			"config": {
-				"routerClass": "sap.m.routing.Router",
-				"viewType": "XML",
-				"async": true,
-				"viewPath": "DrThinkingDoctor.view",
-				"controlAggregation": "pages",
-				"controlId": "app"
-			},
-			"targets": {
-				"View1": {
-					"viewName": "View1"
-				},
-				"View2": {
-					"viewName": "View2"
-				},
-				"View3": {
-					"viewName": "View3"
-				},
-				"View4": {
-					"viewName": "View4"
-				},
-				"View8": {
-					"viewName": "View8"
-				}
-			},
-			"routes": [
-				{
-					"name": "View2",
-					"pattern": "View2",
-					"target": [
-						"View2"
-					]
-				},
-				{
-					"name": "View1",
-					"pattern": "View1",
-					"target": [
-						"View1"
-					]
-				},
-				{
-					"name": "View3",
-					"pattern": "View3",
-					"target": [
-						"View3"
-					]
-				},
-				{
-					"name": "View4",
-					"pattern": "View4",
-					"target": [
-						"View4"
-					]
-				},
-				{
-					"name": "View8",
-					"pattern": "View8",
-					"target": [
-						"View8"
-					]
-				}
-			]
+			"css": [{
+				"uri": "css/style.css"
+			}]
 		}
 	}
 }
