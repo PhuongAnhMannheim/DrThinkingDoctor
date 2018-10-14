@@ -4,6 +4,8 @@ sap.ui.define([
 ], function(MessageToast, Controller) {
 	"use strict";
 	return Controller.extend("DrThinkingDoctor.controller.Chat", {
-		
+		onListItemPress: function(oEvent) {
+				this.getOwnerComponent().getRouter().navTo("chatroom");
+		}
 	});
 });
