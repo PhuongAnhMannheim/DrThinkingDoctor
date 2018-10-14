@@ -5,13 +5,9 @@
 			<Page title=" Welcome to Dr.thinking" class="text1">
 				<content>
 					<tnt:ToolHeader>
-						<Button icon="sap-icon://menu2" type="Transparent">
-							<layoutData>
-								<OverflowToolbarLayoutData priority="NeverOverflow"/>
-							</layoutData>
-						</Button>
+						
 						<ToolbarSpacer/>
-						<core:Icon src="sap-icon://activate"/>
+						
 						<Text text="Feel free to view your profile" wrapping="false">
 							
 							<layoutData>
