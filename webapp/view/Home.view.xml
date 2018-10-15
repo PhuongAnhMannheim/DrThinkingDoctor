@@ -97,6 +97,7 @@
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
+								
 								<mvc:XMLView viewName="DrThinkingDoctor.view.Profile"></mvc:XMLView>
 							</ScrollContainer>
 							<ScrollContainer id="appointments"

@@ -53,6 +53,7 @@ sap.ui.define([
 			var viewId = this.getView().getId();
 			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + item.getKey());
 		},
+		
 			handleUserNamePress: function (event) {
 			var popover = new Popover({
 				showHeader: false,
