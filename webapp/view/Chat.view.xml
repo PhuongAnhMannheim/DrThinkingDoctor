@@ -1,16 +1,15 @@
-<mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
+<mvc:View xmlns:l="sap.ui.layout" 
+	xmlns:core="sap.ui.core" 
+	xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	xmlns:tnt="sap.tnt"
 	controllerName="DrThinkingDoctor.controller.Chat">
 	<App id="app">
 		<Page 
 			title="{i18n>title}"
 			showHeader="false" >
 			<content>
-
 				<Panel>
-					
-					
-					
-					
 							<List headerText="Chatting list">
 								<items>
 									<ObjectListItem title="Omar" type="Active" press="onListItemPress" icon="sap-icon://wounds-doc">
@@ -18,7 +17,7 @@
 											<ObjectStatus text="yesterday" icon="sap-icon://email"/>
 										</firstStatus>
 										<attributes>
-											<ObjectAttribute text="status:offline"  /  >
+											<ObjectAttribute text="status:offline" />
 										</attributes>
 									</ObjectListItem>
 									<ObjectListItem title="Anh" type="Active" press="onListItemPress"
@@ -53,10 +52,8 @@
 									</ObjectListItem>
 								</items>
 							</List>
-					
-					
 				</Panel>
-</content>
+			</content>
 		</Page>
 	</App>
 </mvc:View>
