@@ -1,7 +1,7 @@
 <mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
 	controllerName="DrThinkingDoctor.controller.Appointment">
 	<App id="app">
-		<Page >
+		<Page showHeader="false">
 			<content>
 				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" intro="profile"
 					title="Daniel Thinking" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true" markFlagged="true"
