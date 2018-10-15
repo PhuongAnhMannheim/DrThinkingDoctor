@@ -36,12 +36,12 @@
     "blockPushLevel": "Error"
   },
   "build": {
-    "buildRequired": true,
+    "buildRequired": false,
     "sourceFolder": "webapp",
     "targetFolder": "dist",
     "excludedFolders": [],
     "excludedFiles": [],
-    "lastBuildDateTime": "Sun, 14 Oct 2018 14:51:12 GMT"
+    "lastBuildDateTime": "Mon, 15 Oct 2018 22:39:56 GMT"
   },
   "hybrid": {
     "hatVersion": "1.28.10",
@@ -50,6 +50,6 @@
   "hcpdeploy": {
     "account": "agsdev",
     "name": "drthinkingdoctor",
-    "lastVersionWeTriedToDeploy": "1.0.0"
+    "lastVersionWeTriedToDeploy": "1.0.1"
   }
 }
