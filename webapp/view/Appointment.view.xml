@@ -2,65 +2,94 @@
 	controllerName="DrThinkingDoctor.controller.Appointment">
 	<App id="app">
 		<Page >
-		<content>
-				<Panel>
-					<headerToolbar>
-						<Toolbar>
-							<Title level="H2" text="Upcoming appointment"/>
-						</Toolbar>
-					</headerToolbar>
-					
-						<FlexBox height="200px" justifyContent="Center">
-							<items icon="sap-icon://search">
-								<List binding="{/p_info/0}" width="300px">
-									<DisplayListItem label="Name" value="{Name_1}"/>
-									<DisplayListItem label="Illness" value="{illness_1}"/>
-									<DisplayListItem label="Date" value="{date_1}"/>
-									<DisplayListItem label="Time" value="{Time_1}"/>
-								</List>
+			<content>
+				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name" intro="profile"
+					title="Daniel Thinking" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true" markFlagged="true"
+					markFavorite="true" numberState="Success" backgroundDesign="Translucent">
+					<attributes>
+						<ObjectAttribute title="Age:28"/>
+						<ObjectAttribute title="City:Mannheim"/>
+						<ObjectAttribute title="Email:Dienialthinking @yahoo.com"/>
+					</attributes>
+					<statuses>
+						<ObjectStatus title="Rating" state="Warning" icon="sap-icon://favorite"/>
+					</statuses>
+					<headerContainer>
+						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
+							<items>
+								<IconTabFilter icon="sap-icon://future" count="2">
+									<List items="{/p_info}" headerText=" Upcoming appointment">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name:{Name_1}"/>
+													<ObjectAttribute text="Illness:{illness_1}"/>
+													<ObjectAttribute text="Date:{date_1}"/>
+													<ObjectAttribute text="Time:{Time_1}"/>
+													
+												</attributes>
+											</ObjectListItem>
+											
+										</items>
+										
+									</List>
 									
-								<List binding="{/p_info1/0}" width="300px">
-									<DisplayListItem label="Name" value="{Name_2}"/>
-									<DisplayListItem label="Illness" value="{illness_2}"/>
-									<DisplayListItem label="Date" value="{date_2}"/>
-									<DisplayListItem label="Time" value="{Time_2}"/>
-								</List>
-									</items>
-						</FlexBox>
-							
-				
-				</Panel>
-				
-				<Panel>
-					<headerToolbar>
-						<Toolbar>
-							<Title level="H2" class="center" text="Previous appointment" />
-						</Toolbar> 
-					</headerToolbar>
-					
-						<FlexBox height="200px" justifyContent="Center">
-							<items icon="sap-icon://search">
+										<List items="{/p_info}" headerText=" Upcoming appointment">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name:{Name_2}"/>
+													<ObjectAttribute text="Illness:{illness_2}"/>
+													<ObjectAttribute text="Date:{date_2}"/>
+													<ObjectAttribute text="Time:{Time_2}"/>
+													
+												</attributes>
 								
-								<List binding="{/p_info2/0}" width="300px" >
-									<DisplayListItem label="Name" value="{Name_3}" />
-									<DisplayListItem label="Illness" value="{illness_3}"/>
-									<DisplayListItem label="Date" value="{date_3}"/>
-									<DisplayListItem label="Time" value="{Time_3}"/>
-								</List>
-								<List binding="{/p_info3/0}" width="300px">
-									<DisplayListItem label="Name" value="{Name_4}"/>
-									<DisplayListItem label="Illness" value="{illness_4}"/>
-									<DisplayListItem label="Date" value="{date_4}"/>
-									<DisplayListItem label="Time" value="{Time_4}"/>
-								</List>
+											</ObjectListItem>
+											
+										</items>
+									</List>
+								</IconTabFilter>
+								
+								<IconTabFilter icon="sap-icon://history" count="2">
+									<List items="{/p_info}" headerText="Previous appointment">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name:{Name_3}"/>
+													<ObjectAttribute text="Illness:{illness_3}"/>
+													<ObjectAttribute text="Date:{date_3}"/>
+													<ObjectAttribute text="Time:{Time_3}"/>
+													
+												</attributes>
+								
+											</ObjectListItem>
+										</items>
+									</List>
+									
+									<List items="{/p_info}" headerText="Previous appointment">
+										<items>
+											<ObjectListItem type="Active" press="onListItemPress">
+												<attributes>
+													<ObjectAttribute text="Name:{Name_4}"/>
+													<ObjectAttribute text="Illness:{illness_4}"/>
+													<ObjectAttribute text="Date:{date_4}"/>
+													<ObjectAttribute text="Time:{Time_4}"/>
+													
+												</attributes>
+								
+											</ObjectListItem>
+										</items>
+									</List>
+								</IconTabFilter>
+									
+								
 							</items>
-						</FlexBox>
+						</IconTabBar>
+					</headerContainer>
+				</ObjectHeader>
 				
-				</Panel>
 			</content>
-			
-		
-			
 		</Page>
 	</App>
 </mvc:View>

@@ -18,7 +18,7 @@
 											<ObjectStatus text="yesterday" icon="sap-icon://email"/>
 										</firstStatus>
 										<attributes>
-											<ObjectAttribute text="status:offline" />
+											<ObjectAttribute text="status:offline"  /  >
 										</attributes>
 									</ObjectListItem>
 									<ObjectListItem title="Anh" type="Active" press="onListItemPress"
