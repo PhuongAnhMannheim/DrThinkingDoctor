@@ -7,6 +7,7 @@ sap.ui.define([
 
 	return Controller.extend("DrThinkingDoctor.controller.Register", {
 		onPress: function(oEvent){
+			
 			this.getOwnerComponent().getRouter().navTo("home");
 		},
 		handleUploadPress: function(oEvent) {
