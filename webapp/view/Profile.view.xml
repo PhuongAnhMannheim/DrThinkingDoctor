@@ -37,7 +37,7 @@
 					</items>
 				</List>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://stethoscope" count="3">
+								<IconTabFilter icon="sap-icon://stethoscope" >
 									<List items="{/doc_info}" headerText="Medical experience data">
 					<items>
 						<ObjectListItem type="Active" press="onListItemPress">
@@ -50,7 +50,7 @@
 					</items>
 				</List>
 								</IconTabFilter>
-								<IconTabFilter icon="sap-icon://newspaper" count="12">
+								<IconTabFilter icon="sap-icon://newspaper" >
 									<List items="{/doc_info}" headerText="Certificate and licenses">
 					<items>
 						<ObjectListItem type="Active" press="onListItemPress">
