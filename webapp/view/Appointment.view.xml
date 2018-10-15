@@ -34,7 +34,7 @@
 										
 									</List>
 									
-										<List items="{/p_info}" headerText=" Upcoming appointment">
+										<List items="{/p_info1}" headerText=" Upcoming appointment">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
@@ -52,7 +52,7 @@
 								</IconTabFilter>
 								
 								<IconTabFilter icon="sap-icon://history" count="2">
-									<List items="{/p_info}" headerText="Previous appointment">
+									<List items="{/p_info2}" headerText="Previous appointment">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
@@ -67,7 +67,7 @@
 										</items>
 									</List>
 									
-									<List items="{/p_info}" headerText="Previous appointment">
+									<List items="{/p_info3}" headerText="Previous appointment">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
 												<attributes>
