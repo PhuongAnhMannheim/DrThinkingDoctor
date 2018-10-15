@@ -7,6 +7,9 @@ sap.ui.define([
 	return Controller.extend("DrThinkingDoctor.controller.Welcome", {
 		onPressRegister: function(oEvent){
 			this.getOwnerComponent().getRouter().navTo("register");
+		},
+		onPressLogin: function(oEvent){
+			this.getOwnerComponent().getRouter().navTo("home");
 		}
 	});
 });

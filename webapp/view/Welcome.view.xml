@@ -22,7 +22,7 @@
 								<Text text="Welcome to Dr. Thinking" class="sapUiMediumMarginBottom"/>
 								<Input placeholder="user name / e-mail" required="true"/>
 								<Input placeholder="passwort" required="true"/>
-								<Button width="12rem" text="login" type="Emphasized"/>
+								<Button width="12rem" text="login" type="Emphasized" press="onPressLogin"/>
 								<Text text="or"/>
 								<Button width="12rem" text="register" press="onPressRegister"/>
 							</items>
