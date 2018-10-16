@@ -123,6 +123,11 @@
 					"pattern": "chatroom",
 					"name": "chatroom",
 					"target": "chatroom"
+				},
+				{
+					"pattern": "rating",
+					"name": "rating",
+					"target": "rating"
 				}
 			],
 			"targets": {
@@ -152,6 +157,9 @@
 				},
 				"chatroom": {
 					"viewName": "Chatroom"
+				},
+				"rating": {
+					"viewName": "Rating"
 				}
 			}
 		}
