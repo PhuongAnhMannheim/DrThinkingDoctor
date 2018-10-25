@@ -40,7 +40,7 @@
 											<ObjectAttribute text="status:online"/>
 										</attributes>
 									</ObjectListItem>
-									<ObjectListItem title="Yumna" type="Active" press="onListItemPress"
+									<ObjectListItem title="Yomna" type="Active" press="onListItemPress"
 										icon="sap-icon://wounds-doc">
 										<firstStatus>
 											<ObjectStatus text="Oct 10" icon="sap-icon://email"/>

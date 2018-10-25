@@ -18,7 +18,7 @@
 							<ToolbarSpacer></ToolbarSpacer>
 							<tnt:ToolHeaderUtilitySeparator />
 							<ToolbarSpacer></ToolbarSpacer>
-							<Text id="Header" text="Dr. Thinking"></Text>
+							<Text id="Header" text="Dr.Thinking"></Text>
 							<ToolbarSpacer></ToolbarSpacer>
 							<Button text="Daniel Thinking" type="Transparent" press="handleUserNamePress"></Button>
 						</tnt:ToolHeader>
