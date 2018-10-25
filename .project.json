@@ -41,7 +41,7 @@
     "targetFolder": "dist",
     "excludedFolders": [],
     "excludedFiles": [],
-    "lastBuildDateTime": "Mon, 15 Oct 2018 22:39:56 GMT"
+    "lastBuildDateTime": "Thu, 25 Oct 2018 11:51:09 GMT"
   },
   "hybrid": {
     "hatVersion": "1.28.10",
@@ -50,6 +50,6 @@
   "hcpdeploy": {
     "account": "agsdev",
     "name": "drthinkingdoctor",
-    "lastVersionWeTriedToDeploy": "1.0.1"
+    "lastVersionWeTriedToDeploy": "1.0.2"
   }
 }
