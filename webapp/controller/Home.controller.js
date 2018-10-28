@@ -49,12 +49,10 @@ sap.ui.define([
 			/*this._setToggleButtonTooltip(!sap.ui.Device.system.desktop);*/
 		},
 		onItemSelect : function(oEvent) {
-			var item = oEvent.getParameter('item');
-			var viewId = this.getView().getId();
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + item.getKey());
+			var key = oEvent.getParameter('item').getKey();
+			this._homeNav(key);
 		},
-		
-			handleUserNamePress: function (event) {
+		handleUserNamePress: function (event) {
 			var popover = new Popover({
 				showHeader: false,
 				placement: sap.m.PlacementType.Bottom,
@@ -94,34 +92,30 @@ sap.ui.define([
 				toggleButton.setTooltip('Small Size Navigation');
 			}
 		},
-		onPressSearch: function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("search");
-			jQuery.sap.delayedCall(5000, this, function () {
-				this.getOwnerComponent().getRouter().navTo("match");
-			});
-			/*var oKey = "search";
-			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
+		onPressProfile:function(oEvent){
+			this._homeNav("profile");
+			//this.getOwnerComponent().getRouter().navTo("profile");
 		},
 		onPressAppointments:function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("appointment");
-			/*var oKey = "appointments";
-			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
-		},
-		onPressProfile:function(oEvent){
-			this.getOwnerComponent().getRouter().navTo("profile");
-			/*var oKey = "profile";
-			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
-			
+			this._homeNav("appointments");
+			//this.getOwnerComponent().getRouter().navTo("appointment");
 		},
 		onPressChats: function(oEvent) {
-			this.getOwnerComponent().getRouter().navTo("chat");
-			/*var oKey = "chat";
-			var viewId = "__xmlview4";
-			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + oKey);*/
+			this._homeNav("chat");
+			//this.getOwnerComponent().getRouter().navTo("chat");
+		},
+		onPressSearch: function(oEvent){
+			this._homeNav("search");
+			//this.getOwnerComponent().getRouter().navTo("search");
+			jQuery.sap.delayedCall(5000, this, function () {
+				//this.getOwnerComponent().getRouter().navTo("match");
+				this._homeNav("match");
+			});
+		},
+		_homeNav:function(key){
+			var sKey = key;
+			var viewId = this.getView().getId();
+			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + sKey);
 		}
-		
 	});
 });

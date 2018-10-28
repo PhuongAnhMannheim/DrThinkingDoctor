@@ -24,39 +24,46 @@
 						</tnt:ToolHeader>
 					</tnt:header>
 				<tnt:sideContent>
-			<tnt:SideNavigation expanded="true"
-								itemSelect="onItemSelect">
-				<tnt:NavigationList items="{path: '/navigation'}">
-					<tnt:NavigationListItem text="{title}"
-											icon="{icon}"
-											enabled="{enabled}"
-											expanded="{expanded}"
-											items="{items}"
-											key="{key}">
-						<tnt:NavigationListItem text="{title}"
-												key="{key}"
-												enabled="{enabled}">
+				<tnt:SideNavigation 
+					expanded="true"
+					itemSelect="onItemSelect">
+					<tnt:NavigationList 
+						items="{path: '/navigation'}">
+						<tnt:NavigationListItem 
+							text="{title}"
+							icon="{icon}"
+							enabled="{enabled}"
+							expanded="{expanded}"
+							items="{items}"
+							key="{key}">
+						<tnt:NavigationListItem 
+							text="{title}"
+							key="{key}"
+							enabled="{enabled}"></tnt:NavigationListItem>
 						</tnt:NavigationListItem>
-					</tnt:NavigationListItem>
-				</tnt:NavigationList>
+					</tnt:NavigationList>
 				<tnt:fixedItem>
-					<tnt:NavigationList items="{path: '/fixedNavigation'}">
-						<tnt:NavigationListItem text="{title}"
-												icon="{icon}">
+					<tnt:NavigationList 
+						items="{path: '/fixedNavigation'}">
+						<tnt:NavigationListItem 
+							text="{title}"
+							icon="{icon}">
 						</tnt:NavigationListItem>
 					</tnt:NavigationList>
 				</tnt:fixedItem>
 			</tnt:SideNavigation>
 		</tnt:sideContent>
-				<tnt:mainContents>
-					<NavContainer id="pageContainer">
-						<pages>
-							<ScrollContainer id="home"
-											 height="100%">
-									<VBox fitContainer="true" 
-									justifyContent="Center" 
-									alignItems="Center" 
-									alignContent="Center">
+		<tnt:mainContents>
+			<NavContainer id="pageContainer">
+				<pages>
+					<ScrollContainer 
+						id="home"
+						height="100%">
+							<VBox 
+								fitContainer="true" 
+								justifyContent="Center" 
+								alignItems="Center" 
+								alignContent="Center">
 									<items>
 										<Image 
 											src="img/dr_thinking_logo.png" 
@@ -97,7 +104,6 @@
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
-								
 								<mvc:XMLView viewName="DrThinkingDoctor.view.Profile"></mvc:XMLView>
 							</ScrollContainer>
 							<ScrollContainer id="appointments"
