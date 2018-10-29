@@ -1,10 +1,10 @@
 <mvc:View xmlns:l="sap.ui.layout" xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" xmlns:tnt="sap.tnt"
-	controllerName="DrThinkingDoctor.controller.Profile">
+	controllerName="DrThinkingDoctor.controller.PatientProfile">
 	<App id="app">
 		<Page title="{i18n>title}" showHeader="false">
 			<content>
 				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true"  icon="sap-icon://customer" iconAlt="name"
-					intro="profile" title="{userModel>/currentUser}" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true"
+					intro="profile" title="Daniel Thinking" titleActive="true" titlePress="handleTitlePress" numberUnit="CurrencyCode" showMarkers="true"
 					markFlagged="true" markFavorite="true" numberState="Success" backgroundDesign="Translucent">
 					<attributes>
 						<ObjectAttribute title="Age:28" />

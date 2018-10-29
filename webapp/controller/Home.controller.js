@@ -15,23 +15,47 @@ sap.ui.define([
 			navigation: [{
 				title: 'Home',
 				icon: 'sap-icon://home',
-				key: 'home'
+				key: 'home',
+				visible: true
 			},{
 				title: 'Profile',
 				key: 'profile',
-				icon: 'sap-icon://doctor'
+				icon: 'sap-icon://doctor',
+				visible: true
 			},{
-				title: 'Appointments',
+				title: 'Calendar',
 				key: 'appointments',
-				icon: 'sap-icon://appointment-2'
+				icon: 'sap-icon://appointment-2',
+				visible: true
 			},{
-				title: 'Conversations',
+				title: 'Chat',
 				icon: 'sap-icon://discussion',
-				key: 'chat'
-			}, {
+				key: 'chat',
+				visible: true
+			}, 
+			{
+				title: 'Chatroom',
+				icon: 'sap-icon://employee-lookup',
+				key: 'chatroom',
+				visible: true
+			},
+			{
 				title: 'Patient Finder',
 				icon: 'sap-icon://employee-lookup',
-				key: 'search'
+				key: 'search',
+				visible: true
+			},
+			{
+				title: 'Match',
+				icon: 'sap-icon://employee-lookup',
+				key: 'match',
+				visible: true
+			},
+			{
+				title: 'PatientProfile',
+				icon: 'sap-icon://employee-lookup',
+				key: 'patientprofile',
+				visible: true
 			}
 			],
 			fixedNavigation: [{
@@ -45,7 +69,6 @@ sap.ui.define([
 		onInit : function() {
 			this.model.setData(this.data);
 			this.getView().setModel(this.model);
-
 			/*this._setToggleButtonTooltip(!sap.ui.Device.system.desktop);*/
 		},
 		onItemSelect : function(oEvent) {
@@ -107,8 +130,7 @@ sap.ui.define([
 		onPressSearch: function(oEvent){
 			this._homeNav("search");
 			//this.getOwnerComponent().getRouter().navTo("search");
-			jQuery.sap.delayedCall(5000, this, function () {
-				//this.getOwnerComponent().getRouter().navTo("match");
+			jQuery.sap.delayedCall(1000, this, function () {
 				this._homeNav("match");
 			});
 		},

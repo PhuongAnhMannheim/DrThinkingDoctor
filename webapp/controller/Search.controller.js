@@ -5,5 +5,8 @@ sap.ui.define([
 ], function(jquery, MessageToast, Controller) {
 	"use strict";
 	return Controller.extend("DrThinkingDoctor.controller.Search", {
+		onInit: function(){
+		
+		}
 	});
 });

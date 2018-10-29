@@ -20,11 +20,18 @@
 									class="center">
 								</Image>
 								<Text text="Welcome to Dr. Thinking" class="sapUiMediumMarginBottom"/>
-								<Input placeholder="user name / e-mail" required="true"/>
-								<Input type="Password" placeholder="passwort" required="true"/>
+								<!--<InputListItem label="Email">
+			                        <Input id="email" type="Email" width="250px"/>
+			                    </InputListItem>
+			                    <InputListItem label="Password">
+			                        <Input id="password" type="Password" width="250px"/>
+			                    </InputListItem>-->
+								<Input id="email" placeholder="user name / e-mail" required="true"/>
+								<Input id="password" placeholder="passwort" required="true" type="Password" />
 								<Button width="12rem" text="login" type="Emphasized" press="onPressLogin"/>
 								<Text text="or"/>
 								<Button width="12rem" text="register" press="onPressRegister"/>
+								<!--<Text text="Logged in as {userModel>/currentUser}"/>-->
 							</items>
 						</VBox>	
 					</content>
