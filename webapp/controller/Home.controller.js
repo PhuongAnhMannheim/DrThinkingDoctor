@@ -32,38 +32,16 @@ sap.ui.define([
 				icon: 'sap-icon://discussion',
 				key: 'chat',
 				visible: true
-			}, 
-			{
-				title: 'Chatroom',
-				icon: 'sap-icon://employee-lookup',
-				key: 'chatroom',
-				visible: true
-			},
-			{
-				title: 'Patient Finder',
-				icon: 'sap-icon://employee-lookup',
-				key: 'search',
-				visible: true
-			},
-			{
-				title: 'Match',
-				icon: 'sap-icon://employee-lookup',
-				key: 'match',
-				visible: true
-			},
-			{
-				title: 'PatientProfile',
-				icon: 'sap-icon://employee-lookup',
-				key: 'patientprofile',
-				visible: true
 			}
 			],
 			fixedNavigation: [{
 				title: 'FAQ',
-				icon: 'sap-icon://sys-help'
+				icon: 'sap-icon://sys-help',
+				key: 'faq'
 			}, {
 				title: 'Terms and Conditions',
-				icon: 'sap-icon://crm-service-manager'
+				icon: 'sap-icon://crm-service-manager',
+				key: 'terms'
 			}]
 		},
 		onInit : function() {

@@ -49,7 +49,8 @@
 						items="{path: '/fixedNavigation'}">
 						<tnt:NavigationListItem 
 							text="{title}"
-							icon="{icon}">
+							icon="{icon}"
+							key="{key}">
 						</tnt:NavigationListItem>
 					</tnt:NavigationList>
 				</tnt:fixedItem>
@@ -143,6 +144,12 @@
 											 vertical="true"
 											 height="100%">
 								<mvc:XMLView id="patientprofileView" viewName="DrThinkingDoctor.view.PatientProfile"></mvc:XMLView>
+							</ScrollContainer>
+							<ScrollContainer id="terms"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView id="termsView" viewName="DrThinkingDoctor.view.Terms"></mvc:XMLView>
 							</ScrollContainer>
 						</pages>
 					</NavContainer>
