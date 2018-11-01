@@ -1,3 +1,4 @@
+/* global firebase*/
 sap.ui.define([
 	'jquery.sap.global',
 	'sap/ui/core/Fragment',
@@ -47,6 +48,7 @@ sap.ui.define([
 		onInit : function() {
 			this.model.setData(this.data);
 			this.getView().setModel(this.model);
+			this._getUsers();
 			/*this._setToggleButtonTooltip(!sap.ui.Device.system.desktop);*/
 		},
 		onItemSelect : function(oEvent) {
@@ -85,6 +87,7 @@ sap.ui.define([
 
 			toolPage.setSideExpanded(!toolPage.getSideExpanded());
 		},
+		
 		_setToggleButtonTooltip : function(bLarge) {
 			var toggleButton = this.byId('sideNavigationToggleButton');
 			if (bLarge) {
@@ -93,18 +96,22 @@ sap.ui.define([
 				toggleButton.setTooltip('Small Size Navigation');
 			}
 		},
+		
 		onPressProfile:function(oEvent){
 			this._homeNav("profile");
 			//this.getOwnerComponent().getRouter().navTo("profile");
 		},
+		
 		onPressAppointments:function(oEvent){
 			this._homeNav("appointments");
 			//this.getOwnerComponent().getRouter().navTo("appointment");
 		},
+		
 		onPressChats: function(oEvent) {
 			this._homeNav("chat");
 			//this.getOwnerComponent().getRouter().navTo("chat");
 		},
+		
 		onPressSearch: function(oEvent){
 			this._homeNav("search");
 			//this.getOwnerComponent().getRouter().navTo("search");
@@ -112,10 +119,39 @@ sap.ui.define([
 				this._homeNav("match");
 			});
 		},
+		
 		_homeNav:function(key){
 			var sKey = key;
 			var viewId = this.getView().getId();
 			sap.ui.getCore().byId(viewId + "--pageContainer").to(viewId + "--" + sKey);
-		}
+		},
+		
+		_getUsers: function() {
+            var that = this;
+            var oRefToUserData = firebase.database().ref("/users");
+            //MessageToast.show(oRefToUserData);
+            oRefToUserData.once("value").then(function(snapshot) {
+			    snapshot.forEach(function(childSnapshot) {
+			      // key will be "ada" the first time and "alan" the second time
+			      var key = childSnapshot.key;
+			      // childData will be the actual contents of the child
+			      var childData = childSnapshot.val();
+			      console.log(key + "; "+childData);
+			  });
+			});
+            oRefToUserData.on("value", function(oSnapshot) {
+                var mUserData = oSnapshot.toJSON();
+                //MessageToast.show("User Data = "+ mUserData);
+                var aUserData = $.map(mUserData, function(oElement, sGuid) {
+                    oElement.guid = sGuid;
+                    return oElement;
+                });
+                var oUserModel = new sap.ui.model.json.JSONModel({});
+                //MessageToast.show(oUserModel);
+                oUserModel.setProperty("/users", aUserData);
+                oUserModel.setProperty("/currentUser", firebase.auth().currentUser.email);
+                that.getView().setModel(oUserModel, "userModel");
+            });
+        }
 	});
 });
