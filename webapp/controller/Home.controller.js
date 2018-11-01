@@ -24,8 +24,14 @@ sap.ui.define([
 				icon: 'sap-icon://doctor',
 				visible: true
 			},{
-				title: 'Calendar',
+				title: 'Appointments',
 				key: 'appointments',
+				icon: 'sap-icon://appointment-2',
+				visible: false
+			},
+			{
+				title: 'Calendar',
+				key: 'calendar',
 				icon: 'sap-icon://appointment-2',
 				visible: true
 			},{

@@ -113,7 +113,13 @@
 											 horizontal="false"
 											 vertical="true"
 											 height="100%">
-								<mvc:XMLView id="calendarView" viewName="DrThinkingDoctor.view.Appointment"></mvc:XMLView>
+								<mvc:XMLView id="appointmentView" viewName="DrThinkingDoctor.view.Appointment"></mvc:XMLView>
+							</ScrollContainer>
+								<ScrollContainer id="calendar"
+											 horizontal="false"
+											 vertical="true"
+											 height="100%">
+								<mvc:XMLView id="calendarView" viewName="DrThinkingDoctor.view.Calendar"></mvc:XMLView>
 							</ScrollContainer>
 							<ScrollContainer id="chat"
 											 horizontal="false"
