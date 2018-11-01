@@ -16,7 +16,6 @@ sap.ui.define([
 			    messagingSenderId: "233440483716"
 			  };
 			  firebase.initializeApp(config);*/
-    		
 			var oModel = new sap.ui.model.json.JSONModel("profile.json");
 			this.getView().setModel(oModel);
 
@@ -43,6 +42,16 @@ sap.ui.define([
 		handleTitlePress : function (oEvent) {
 			var domRef = oEvent.getParameter("domRef");
 			this._getPopover().openBy(domRef);
+		},
+		
+		onRejectPress : function (){
+			this.getView().byId("notifitem").destroy(true);
+			MessageToast.show("You rejected the request.");
+		},
+		
+		onAcceptPress : function (){
+			this.getView().byId("notifitem").destroy(true);
+			MessageToast.show("You accepted the request.");
 		}
 	});
 });
