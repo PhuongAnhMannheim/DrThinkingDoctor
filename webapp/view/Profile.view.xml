@@ -9,14 +9,6 @@
 				<ObjectHeader id="oh1" responsive="true" fullScreenOptimized="true" icon="sap-icon://customer" iconAlt="name"
 					title="Dr. Daniel Thinking" titleActive="true" titlePress="handleTitlePress" 
 					numberState="Success" backgroundDesign="Translucent">
-					<!--<attributes>
-						<ObjectAttribute title="Age : 28"/>
-						<ObjectAttribute title="City:Mannheim"/>
-						<ObjectAttribute title="Email:Dienialthinking @yahoo.com"/>
-					</attributes>
-					<statuses>
-						<ObjectStatus title="Rating" state="Warning" icon="sap-icon://favorite"/>
-					</statuses>-->
 					<headerContainer>
 						<IconTabBar id="itb1" selectedKey="key3" upperCase="true" class="sapUiResponsiveContentPadding">
 							<items>
@@ -40,7 +32,6 @@
 									</List>
 								</IconTabFilter>
 								<IconTabFilter icon="sap-icon://stethoscope">
-									<Button text="TestBTN"></Button>
 									<List items="{/doc_info}" headerText="Medical experience data">
 										<items>
 											<ObjectListItem type="Active" press="onListItemPress">
